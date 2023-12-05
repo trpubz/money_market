@@ -137,4 +137,20 @@ describe "Markets API" do
 
     expect { Market.find(market.id) }.to raise_error(ActiveRecord::RecordNotFound)
   end
+
+  context "record does not exist" do
+    it "returns a 404 status code with an error message" do
+      id = create(:market).id
+
+      MarketVendor.create(vendor: create(:vendor), market_id: id)
+      Market.last.reload
+
+      get api_v0_market_path(id: "nonexistent_id"), as: :json
+
+      msg = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to have_http_status :not_found
+      expect(msg[:error]).to eq "Market nonexistent_id not found"
+    end
+  end
 end

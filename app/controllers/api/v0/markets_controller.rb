@@ -4,7 +4,13 @@ class Api::V0::MarketsController < ApplicationController
   end
 
   def show
-    render json: Market.find(params[:id])
+    mrkt = Market.find_by(id: params[:id])  # must use #find_by here because #find will return early with rails default error
+
+    if mrkt
+      render json: mrkt
+    else
+      render json: {error: "Market #{params[:id]} not found"}, status: :not_found, content_type: "application/json"
+    end
   end
 
   def create
