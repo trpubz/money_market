@@ -65,4 +65,44 @@ RSpec.describe "vendors requests" do
       end
     end
   end
+
+  describe "#delete" do
+    context "good data" do
+      it "delete AR model and returns 204" do
+        vndr = create :vendor
+        id = vndr.id
+
+        delete "/api/v0/vendors/#{id}"
+
+        expect(response).to have_http_status(:no_content)
+
+        get "/api/v0/vendors/#{id}"
+
+        expect(response).to have_http_status :not_found
+      end
+
+      context "bad data" do
+        it "returns 404 if id doesn't exists" do
+          delete "/api/v0/vendors/01234664987"
+
+          expect(response).to have_http_status :not_found
+          expect(response.body).to include "Couldn't find Vendor"
+        end
+      end
+    end
+
+    context "bad data" do
+      it "returns a 400 and error message" do
+        data = {
+          name: "Buzzy Bees",
+          description: "local honey and wax products"
+        }.to_json
+
+        post api_v0_vendors_path, params: data, headers: {"content-type": "application/json"}
+
+        expect(response).to have_http_status(:bad_request)
+        expect(response.body).to include("Validation failed")
+      end
+    end
+  end
 end
