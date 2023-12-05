@@ -2,7 +2,7 @@ class Api::V0::VendorsController < ApplicationController
   def index
     mrkt = Market.find_by(id: params[:market_id])
     if mrkt
-      render json: VendorSerializer.new(mrkt.vendors)
+      render json: VendorSerializer.new(mrkt.vendors), status: :ok
     else
       render json: {errors: "Not Found"},
         status: :not_found,
@@ -31,6 +31,18 @@ class Api::V0::VendorsController < ApplicationController
   end
 
   def update
+    vndr = Vendor.find_by(id: params[:id])
+    if vndr
+      vndr.update(vendor_params)
+      if !vndr.valid?
+        render json: {errors: vndr.errors.full_messages.map { |msg| "Validation failed: #{msg}" }},
+          status: :bad_request
+      else
+        render json: VendorSerializer.new(vndr), status: :ok
+      end
+    else
+      render json: {errors: "Couldn't find Vendor with 'id'=#{params[:id]}"}, status: :not_found
+    end
   end
 
   def destroy
