@@ -34,6 +34,11 @@ class Api::V0::VendorsController < ApplicationController
   end
 
   def destroy
+    vndr = Vendor.find_by(id: params[:id])
+    if vndr
+      vndr.destroy!
+      render json: {}, status: :no_content
+    end
   end
 
   def vendor_params
