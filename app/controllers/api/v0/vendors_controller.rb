@@ -22,6 +22,12 @@ class Api::V0::VendorsController < ApplicationController
   end
 
   def create
+    vndr = Vendor.create(vendor_params)
+    if vndr.valid?
+      render json: VendorSerializer.new(vndr), status: :created
+    else
+      render json: {errors: vndr.errors.full_messages.map { |msg| "Validation failed: #{msg}" }}, status: :bad_request
+    end
   end
 
   def update
@@ -31,7 +37,7 @@ class Api::V0::VendorsController < ApplicationController
   end
 
   def vendor_params
-    params.require(:vendor).permit(
+    params.permit(
       :name,
       :description,
       :contact_name,

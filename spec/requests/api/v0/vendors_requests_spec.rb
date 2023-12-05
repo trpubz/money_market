@@ -32,4 +32,37 @@ RSpec.describe "vendors requests" do
       end
     end
   end
+
+  describe "#create" do
+    context "good data" do
+      it "creates new AR model and returns JSON object" do
+        data = {
+          name: "Buzzy Bees",
+          description: "local honey and wax products",
+          contact_name: "Berly Couwer",
+          contact_phone: "8389928383",
+          credit_accepted: false
+        }.to_json
+
+        post api_v0_vendors_path, params: data, headers: {"content-type": "application/json"}
+
+        expect(response).to have_http_status(:created)
+        expect(response.body).to include("Buzzy Bees")
+      end
+    end
+
+    context "bad data" do
+      it "returns a 400 and error message" do
+        data = {
+          name: "Buzzy Bees",
+          description: "local honey and wax products"
+        }.to_json
+
+        post api_v0_vendors_path, params: data, headers: {"content-type": "application/json"}
+
+        expect(response).to have_http_status(:bad_request)
+        expect(response.body).to include("Validation failed")
+      end
+    end
+  end
 end
