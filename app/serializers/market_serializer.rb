@@ -1,10 +1,4 @@
 class MarketSerializer
-  def self.format_markets(markets)
-    markets.map do |market|
-      format_market(market)
-    end
-  end
-
   def self.format_market(market)
     {
       id: market.id.to_s,
