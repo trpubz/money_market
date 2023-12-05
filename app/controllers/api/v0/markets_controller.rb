@@ -1,15 +1,31 @@
 class Api::V0::MarketsController < ApplicationController
   def index
-    render json: Market.all
+    markets = Market.all
+    render json: {
+      data: markets.map do |market|
+        {
+          type: "market",
+          attributes: MarketSerializer.format_market(market)
+        }
+      end
+    }
   end
 
   def show
     mrkt = Market.find_by(id: params[:id])  # must use #find_by here because #find will return early with rails default error
 
     if mrkt
-      render json: mrkt
+      render json: {
+        data: {
+          type: "market",
+          id: params[:id],
+          attributes: MarketSerializer.format_market(mrkt).except(:id)
+        }
+      }
     else
-      render json: {error: "Market #{params[:id]} not found"}, status: :not_found, content_type: "application/json"
+      render json: {errors: "Not Found"},
+        status: :not_found,
+        content_type: "application/json"
     end
   end
 
