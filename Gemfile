@@ -48,6 +48,7 @@ group :development, :test do
   gem "faker"
   gem "simplecov"
   gem "standardrb"
+  gem "jsonapi-serializer"
 end
 
 group :development do
