@@ -105,4 +105,46 @@ RSpec.describe "vendors requests" do
       end
     end
   end
+
+  describe "#update" do
+    context "good data" do
+      it "PATCHes updates to vendor, returns vendor and 200" do
+        vndr = create :vendor
+        updates = {
+          name: "TP's"
+        }.to_json
+
+        patch api_v0_vendor_path(vndr), params: updates, headers: {"content-type": "application/json"}
+
+        expect(response).to have_http_status :ok
+        expect(response.body).to include "TP's"
+      end
+    end
+
+    context "bad data" do
+      it "returns 404 not found if id doesn't exists" do
+        create :vendor
+        updates = {
+          name: "TP's"
+        }.to_json
+
+        patch api_v0_vendor_path(id: "123456789"), params: updates, headers: {"content-type": "application/json"}
+
+        expect(response).to have_http_status :not_found
+        expect(response.body).to include "Couldn't find Vendor"
+      end
+
+      it "returns 400 bad request if invalid attributes requested" do
+        vndr = create :vendor
+        updates = {
+          credit_accepted: nil
+        }.to_json
+
+        patch api_v0_vendor_path(vndr), params: updates, headers: {"content-type": "application/json"}
+
+        expect(response).to have_http_status :bad_request
+        expect(response.body).to include "Validation failed"
+      end
+    end
+  end
 end
