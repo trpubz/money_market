@@ -80,15 +80,6 @@ RSpec.describe "vendors requests" do
 
         expect(response).to have_http_status :not_found
       end
-
-      context "bad data" do
-        it "returns 404 if id doesn't exists" do
-          delete "/api/v0/vendors/01234664987"
-
-          expect(response).to have_http_status :not_found
-          expect(response.body).to include "Couldn't find Vendor"
-        end
-      end
     end
 
     context "bad data" do
@@ -102,6 +93,13 @@ RSpec.describe "vendors requests" do
 
         expect(response).to have_http_status(:bad_request)
         expect(response.body).to include("Validation failed")
+      end
+
+      it "returns 404 if id doesn't exists" do
+        delete "/api/v0/vendors/01234664987"
+
+        expect(response).to have_http_status :not_found
+        expect(response.body).to include "Couldn't find Vendor"
       end
     end
   end

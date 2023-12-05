@@ -1,4 +1,9 @@
 class MarketVendor < ApplicationRecord
+  validates :market_id,
+    uniqueness: {
+      scope: :vendor_id,
+      message: "and vendor combination must be unique"
+    }
   belongs_to :market
   belongs_to :vendor
 
