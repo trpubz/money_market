@@ -9,7 +9,11 @@ Rails.application.routes.draw do
   # root "posts#index"
   namespace :api do
     namespace :v0 do
+      get "markets/search", to: "markets#search"
       resources :markets do
+        member do
+          get "nearest_atms"
+        end
         resources :vendors, only: :index
       end
 

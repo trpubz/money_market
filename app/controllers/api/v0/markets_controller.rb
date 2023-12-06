@@ -41,7 +41,39 @@ class Api::V0::MarketsController < ApplicationController
     render json: Market.delete(params[:id])
   end
 
+  def search
+    if valid_param_combo?
+      mrkts = Market.search(search_params)
+      render json: MarketSerializer.new(mrkts), status: :ok
+    else
+      render json: {errors: "Invalid set of parameters."}, status: :unprocessable_entity
+    end
+  end
+
+  def nearest_atms
+    mrkt = Market.find_by(id: params[:id])
+  end
+
   private
+
+  def valid_param_combo?
+    validator = search_params.to_h
+
+    validator.each do |param|  # param is [k,v] array
+      if param.first == "city"
+        validator.delete(:city)
+        validator.delete(:name) if validator.has_key?(:name)
+      end
+    end
+
+    validator.count > 0
+  end
+
+  def search_params
+    params.permit(:state,
+      :city,
+      :name)
+  end
 
   def market_params
     params.require(:market).permit(
