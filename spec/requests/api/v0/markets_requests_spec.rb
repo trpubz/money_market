@@ -193,4 +193,52 @@ describe "Markets API" do
       end
     end
   end
+
+  describe "search requests" do
+    context "good request" do
+      it "returns 200 ok status with search results" do
+        mrkt = Market.create(
+          name: "Nob Hill Growers' Market",
+          street: "Lead & Morningside SE",
+          city: "Albuquerque",
+          county: "Bernalillo",
+          state: "New Mexico",
+          zip: nil,
+          lat: "35.077529",
+          lon: "-106.600449"
+        )
+
+        get api_v0_markets_search_path, params: {city: "albuquerque", name: "nob hill", state: "New Mexico"}
+
+        markets = JSON.parse(response.body, symbolize_names: true)[:data]
+
+        expect(response).to be_successful
+
+        expect(markets.first[:id]).to eq mrkt.id.to_s
+      end
+    end
+
+    context "bad request" do
+      it "returns 422 unprocessable_entity if just city or just city, name are passed" do
+        Market.create(
+          name: "Nob Hill Growers' Market",
+          street: "Lead & Morningside SE",
+          city: "Albuquerque",
+          county: "Bernalillo",
+          state: "New Mexico",
+          zip: nil,
+          lat: "35.077529",
+          lon: "-106.600449"
+        )
+
+        get api_v0_markets_search_path, params: {city: "albuquerque", name: "nob hill"}
+
+        expect(response).to have_http_status :unprocessable_entity
+
+        get api_v0_markets_search_path, params: {city: "albuquerque"}
+
+        expect(response).to have_http_status :unprocessable_entity
+      end
+    end
+  end
 end

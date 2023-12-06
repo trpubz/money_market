@@ -5,4 +5,14 @@ class Market < ApplicationRecord
   def vendor_count
     vendors.count
   end
+
+  def self.search(attrs)
+    markets = Market.all
+
+    attrs.each do |k, v|
+      markets = markets.where("#{k} ILIKE ?", "%#{v}%")
+    end
+
+    markets
+  end
 end
