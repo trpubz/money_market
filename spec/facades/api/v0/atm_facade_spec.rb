@@ -1,5 +1,5 @@
 require "rails_helper"
-require_relative "../../app/facades/atm_facade"
+require_relative "../../../../app/facades/atm_facade"
 
 RSpec.describe "ATM Facade" do
   describe "class methods" do
