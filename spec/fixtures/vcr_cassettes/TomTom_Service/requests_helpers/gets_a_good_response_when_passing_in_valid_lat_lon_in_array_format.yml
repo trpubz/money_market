@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic%20teller%20machines.json?key=<TOMTOM_API_KEY>&lat=37.8328&lon=-122.27669
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Dec 2023 20:43:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - c2e495d8-3974-4df5-966f-b84aa8911d24
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '10'
+      X-Envoy-Upstream-Service-Time:
+      - '22'
+      Server:
+      - tomtom
+      X-Envoy-Attempt-Count:
+      - '1'
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic teller machines","queryType":"NON_NEAR","queryTime":7,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":37.8328,"lon":-122.27669}},"results":[{"type":"POI","id":"m4qcxCXbadhJKeRWzNSe2Q","score":9.3454547047,"dist":264.894261,"info":"search:ta:840069021261486-US","poi":{"name":"Prosperity
+        Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4000","streetName":"San Pablo Avenue","municipality":"Emeryville","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3612","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4000 San Pablo Avenue,
+        Emeryville, CA 94608","localName":"Emeryville"},"position":{"lat":37.831557,"lon":-122.279263},"viewport":{"topLeftPoint":{"lat":37.83246,"lon":-122.2804},"btmRightPoint":{"lat":37.83066,"lon":-122.27812}},"entryPoints":[{"type":"main","position":{"lat":37.83143,"lon":-122.27992}}]},{"type":"POI","id":"WBl6hdEf6Vgg88blfoaN6g","score":9.3454463123,"dist":277.409906,"info":"search:ta:840069019177563-US","poi":{"name":"Lynk
+        Systems","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4301","streetName":"Market Street","municipalitySubdivision":"Longfellow","municipality":"Oakland","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3407","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4301 Market Street, Emeryville,
+        CA 94608","localName":"Emeryville"},"position":{"lat":37.833221,"lon":-122.273576},"viewport":{"topLeftPoint":{"lat":37.83412,"lon":-122.27471},"btmRightPoint":{"lat":37.83232,"lon":-122.27244}},"entryPoints":[{"type":"main","position":{"lat":37.83318,"lon":-122.27329}}]},{"type":"POI","id":"tkiP2YqmJbDCI7ridGqS8A","score":9.3454410671,"dist":286.32794,"info":"search:ta:840069006770634-US","poi":{"name":"ATM","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4321","streetName":"Market Street","municipalitySubdivision":"Longfellow","municipality":"Oakland","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3407","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4321 Market Street, Emeryville,
+        CA 94608","localName":"Emeryville"},"position":{"lat":37.833332,"lon":-122.2735},"viewport":{"topLeftPoint":{"lat":37.83423,"lon":-122.27464},"btmRightPoint":{"lat":37.83243,"lon":-122.27236}},"entryPoints":[{"type":"main","position":{"lat":37.83325,"lon":-122.27327}}]},{"type":"POI","id":"Od3wkliihtOeIfhF2IhIQA","score":9.3454242825,"dist":309.927788,"info":"search:ta:840069001465281-US","poi":{"name":"Bank
+        of America Na","phone":"+1 844-401-8500","brands":[{"name":"Bank of America"}],"categorySet":[{"id":7397}],"url":"locators.bankofamerica.com/ca/emeryville/financial-c","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4120","streetName":"San Pablo Avenue","municipality":"Emeryville","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3613","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4120 San Pablo Avenue,
+        Emeryville, CA 94608","localName":"Emeryville"},"position":{"lat":37.832456,"lon":-122.280192},"viewport":{"topLeftPoint":{"lat":37.83336,"lon":-122.28133},"btmRightPoint":{"lat":37.83156,"lon":-122.27905}},"entryPoints":[{"type":"main","position":{"lat":37.83244,"lon":-122.28025}}]},{"type":"POI","id":"7Ucs-aEpDECY6pekDB3-tQ","score":9.3454064487,"dist":334.266166,"info":"search:ta:840066000000890-US","poi":{"name":"Cardtronics","brands":[{"name":"Cardtronics"}],"categorySet":[{"id":7397}],"url":"www.cardtronics.com/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4097","streetName":"San Pablo Avenue","municipality":"Emeryville","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3611","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4097 San Pablo Avenue,
+        Emeryville, CA 94608","localName":"Emeryville"},"position":{"lat":37.832183,"lon":-122.280415},"viewport":{"topLeftPoint":{"lat":37.83308,"lon":-122.28155},"btmRightPoint":{"lat":37.83128,"lon":-122.27928}},"entryPoints":[{"type":"main","position":{"lat":37.8322,"lon":-122.2803}}]},{"type":"POI","id":"rGfn2C1kSAO-W2BexChSxQ","score":9.3454053997,"dist":334.371818,"info":"search:ta:840069019575101-US","poi":{"name":"Prosperity
+        Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4097","streetName":"San Pablo Avenue","municipality":"Emeryville","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3611","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4097 San Pablo Avenue,
+        Emeryville, CA 94608","localName":"Emeryville"},"position":{"lat":37.832183,"lon":-122.280416},"viewport":{"topLeftPoint":{"lat":37.83308,"lon":-122.28155},"btmRightPoint":{"lat":37.83128,"lon":-122.27928}},"entryPoints":[{"type":"main","position":{"lat":37.8322,"lon":-122.2803}}]},{"type":"POI","id":"6NCje_kT14n48HE9FNd0FA","score":9.3453970074,"dist":345.617941,"info":"search:ta:840069019250673-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4051","streetName":"San Pablo Avenue","municipality":"Emeryville","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3611","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4051 San Pablo Avenue,
+        Emeryville, CA 94608","localName":"Emeryville"},"position":{"lat":37.831292,"lon":-122.280131},"viewport":{"topLeftPoint":{"lat":37.83219,"lon":-122.28127},"btmRightPoint":{"lat":37.83039,"lon":-122.27899}},"entryPoints":[{"type":"main","position":{"lat":37.83131,"lon":-122.28002}}]},{"type":"POI","id":"Kv0wPMlS3qHTe8fVNPmaNQ","score":9.3453833698,"dist":362.391135,"info":"search:ta:840069020340252-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4505","streetName":"Market Street","municipalitySubdivision":"Longfellow","municipality":"Oakland","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3425","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4505 Market Street, Emeryville,
+        CA 94608","localName":"Emeryville"},"position":{"lat":37.834626,"lon":-122.273272},"viewport":{"topLeftPoint":{"lat":37.83553,"lon":-122.27441},"btmRightPoint":{"lat":37.83373,"lon":-122.27213}},"entryPoints":[{"type":"main","position":{"lat":37.83465,"lon":-122.27297}}]},{"type":"POI","id":"Ql9Cj8NGCaVIupHEUC5O7g","score":9.3453833698,"dist":362.391135,"info":"search:ta:840066000000315-US","poi":{"name":"North
+        Side Supermarket","phone":"+1 510-654-5914","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4505","streetName":"Market Street","municipalitySubdivision":"Longfellow","municipality":"Oakland","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3425","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4505 Market Street, Emeryville,
+        CA 94608","localName":"Emeryville"},"position":{"lat":37.834626,"lon":-122.273272},"viewport":{"topLeftPoint":{"lat":37.83553,"lon":-122.27441},"btmRightPoint":{"lat":37.83373,"lon":-122.27213}},"entryPoints":[{"type":"main","position":{"lat":37.83465,"lon":-122.27297}}]},{"type":"POI","id":"O_nDM53hTyoS3m2gYWe3VA","score":9.3453760265,"dist":370.666042,"info":"search:ta:840069019628707-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"4330","streetName":"San Pablo Avenue","municipality":"Emeryville","countrySecondarySubdivision":"Alameda","countrySubdivision":"CA","countrySubdivisionName":"California","countrySubdivisionCode":"CA","postalCode":"94608","extendedPostalCode":"94608-3472","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"4330 San Pablo Avenue,
+        Emeryville, CA 94608","localName":"Emeryville"},"position":{"lat":37.833995,"lon":-122.28063},"viewport":{"topLeftPoint":{"lat":37.83489,"lon":-122.28177},"btmRightPoint":{"lat":37.8331,"lon":-122.27949}},"entryPoints":[{"type":"main","position":{"lat":37.83404,"lon":-122.28076}}]}]}'
+  recorded_at: Wed, 06 Dec 2023 20:43:25 GMT
+recorded_with: VCR 6.2.0

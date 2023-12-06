@@ -22,7 +22,7 @@ RSpec.describe "TomTom Service" do
       expect(response[:status]).to eq 200
     end
 
-    it "gets a good response when passing in valid lat lon in array format" do
+    it "gets a good response when passing in valid lat lon in array format", :vcr do
       WebMock.allow_net_connect!
 
       response = TomTomService.atm_json({lat: 37.8328, lon: -122.27669})
