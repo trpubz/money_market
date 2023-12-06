@@ -17,6 +17,6 @@ class Market < ApplicationRecord
   end
 
   def cash_only
-    vendors.any? { |v| !v.credit_accepted }
+    !vendors.any? { |v| v.credit_accepted }
   end
 end
