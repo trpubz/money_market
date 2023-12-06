@@ -266,5 +266,13 @@ describe "Markets API" do
         expect(attrs).to have_key :lon
       end
     end
+
+    context "bad request from market id" do
+      it "returns 404 not found" do
+        get nearest_atms_api_v0_market_path(id: 132456789)
+
+        expect(response).to have_http_status :not_found
+      end
+    end
   end
 end
