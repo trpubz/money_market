@@ -49,6 +49,8 @@ group :development, :test do
   gem "simplecov"
   gem "standardrb"
   gem "jsonapi-serializer"
+  gem "faraday"
+  gem "webmock"
 end
 
 group :development do

@@ -59,8 +59,8 @@ class Api::V0::MarketsController < ApplicationController
   def valid_param_combo?
     validator = search_params.to_h
 
-    validator.each do |param|  # param is [k,v] array
-      if param.first == "city"
+    validator.each do |key, _|  # param is [k,v] array
+      if key == "city"
         validator.delete(:city)
         validator.delete(:name) if validator.has_key?(:name)
       end
