@@ -1,3 +1,6 @@
+require_relative "../../../facades/atm_facade"
+require_relative "../../../serializers/atm_serializer"
+
 class Api::V0::MarketsController < ApplicationController
   def index
     markets = Market.all
@@ -52,6 +55,11 @@ class Api::V0::MarketsController < ApplicationController
 
   def nearest_atms
     mrkt = Market.find_by(id: params[:id])
+    if mrkt
+      render json: ATMSerializer.new(ATMFacade.atms(mrkt))
+    else
+      render json: {errors: "Not Found"}, status: :not_found
+    end
   end
 
   private
@@ -59,8 +67,8 @@ class Api::V0::MarketsController < ApplicationController
   def valid_param_combo?
     validator = search_params.to_h
 
-    validator.each do |param|  # param is [k,v] array
-      if param.first == "city"
+    validator.each do |key, _|  # param is [k,v] array
+      if key == "city"
         validator.delete(:city)
         validator.delete(:name) if validator.has_key?(:name)
       end
