@@ -6,6 +6,10 @@ class MarketSerializer
     obj.vendor_count
   end
 
+  attribute :cash_only do |obj|
+    obj.cash_only
+  end
+
   def self.format_market(market)
     {
       id: market.id.to_s,
