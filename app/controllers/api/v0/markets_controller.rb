@@ -26,7 +26,7 @@ class Api::V0::MarketsController < ApplicationController
         }
       }
     else
-      render json: {errors: "Not Found"},
+      render json: {errors: [{detail: "Not Found: bad id #{params[:id]}"}]},
         status: :not_found,
         content_type: "application/json"
     end
@@ -49,7 +49,7 @@ class Api::V0::MarketsController < ApplicationController
       mrkts = Market.search(search_params)
       render json: MarketSerializer.new(mrkts), status: :ok
     else
-      render json: {errors: "Invalid set of parameters."}, status: :unprocessable_entity
+      render json: {errors: [{detail: "Invalid set of parameters."}]}, status: :unprocessable_entity
     end
   end
 
@@ -58,7 +58,7 @@ class Api::V0::MarketsController < ApplicationController
     if mrkt
       render json: ATMSerializer.new(ATMFacade.atms(mrkt))
     else
-      render json: {errors: "Not Found"}, status: :not_found
+      render json: {errors: [{detail: "Not Found: bad id #{params[:id]}"}]}, status: :not_found
     end
   end
 

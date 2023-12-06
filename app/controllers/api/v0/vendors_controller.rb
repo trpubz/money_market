@@ -4,7 +4,7 @@ class Api::V0::VendorsController < ApplicationController
     if mrkt
       render json: VendorSerializer.new(mrkt.vendors), status: :ok
     else
-      render json: {errors: "Not Found"},
+      render json: {errors: [{detail: "Not Found: bad id #{params[:market_id]}"}]},
         status: :not_found,
         content_type: "application/json"
     end
@@ -15,7 +15,7 @@ class Api::V0::VendorsController < ApplicationController
     if vndr
       render json: VendorSerializer.new(vndr)
     else
-      render json: {errors: "Not Found"},
+      render json: {errors: [{detail: "Not Found: bad id #{params[:id]}"}]},
         status: :not_found,
         content_type: "application/json"
     end
@@ -26,7 +26,7 @@ class Api::V0::VendorsController < ApplicationController
     if vndr.valid?
       render json: VendorSerializer.new(vndr), status: :created
     else
-      render json: {errors: vndr.errors.full_messages.map { |msg| "Validation failed: #{msg}" }}, status: :bad_request
+      render json: {errors: vndr.errors.full_messages.map { |msg| {detail: "Validation failed: #{msg}"} }}, status: :bad_request
     end
   end
 
@@ -41,7 +41,7 @@ class Api::V0::VendorsController < ApplicationController
         render json: VendorSerializer.new(vndr), status: :ok
       end
     else
-      render json: {errors: "Couldn't find Vendor with 'id'=#{params[:id]}"}, status: :not_found
+      render json: {errors: [{detail: "Couldn't find Vendor with 'id'=#{params[:id]}"}]}, status: :not_found
     end
   end
 
@@ -51,7 +51,7 @@ class Api::V0::VendorsController < ApplicationController
       vndr.destroy!
       render json: {}, status: :no_content
     else
-      render json: {errors: "Couldn't find Vendor with 'id'=#{params[:id]}"}, status: :not_found
+      render json: {errors: [{detail: "Couldn't find Vendor with 'id'=#{params[:id]}"}]}, status: :not_found
     end
   end
 

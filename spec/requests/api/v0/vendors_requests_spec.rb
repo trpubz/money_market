@@ -28,7 +28,7 @@ RSpec.describe "vendors requests" do
         msg = JSON.parse(response.body, symbolize_names: true)
 
         expect(response).to have_http_status :not_found
-        expect(msg[:errors]).to eq "Not Found"
+        expect(msg[:errors].first[:detail]).to include "Not Found"
       end
     end
   end
@@ -59,9 +59,10 @@ RSpec.describe "vendors requests" do
         }.to_json
 
         post api_v0_vendors_path, params: data, headers: {"content-type": "application/json"}
+        msg = JSON.parse(response.body, symbolize_names: true)
 
         expect(response).to have_http_status(:bad_request)
-        expect(response.body).to include("Validation failed")
+        expect(msg[:errors].first[:detail]).to include("Validation failed")
       end
     end
   end

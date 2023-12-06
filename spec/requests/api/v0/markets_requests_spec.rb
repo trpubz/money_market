@@ -150,7 +150,7 @@ describe "Markets API" do
       msg = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status :not_found
-      expect(msg[:errors]).to eq "Not Found"
+      expect(msg[:errors].first[:detail]).to include "Not Found"
     end
   end
 
@@ -189,7 +189,7 @@ describe "Markets API" do
         msg = JSON.parse(response.body, symbolize_names: true)
 
         expect(response).to have_http_status :not_found
-        expect(msg[:errors]).to eq "Not Found"
+        expect(msg[:errors].first[:detail]).to include "Not Found"
       end
     end
   end
