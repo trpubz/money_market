@@ -1,0 +1,3 @@
+class LocationFacade
+
+end

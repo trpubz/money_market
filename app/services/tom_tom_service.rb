@@ -2,13 +2,21 @@ require "faraday"
 
 class TomTomService
   def self.lat_lon_json(lat_lon)
-    response = get("search/2/reverseGeocode/" + lat_lon.join(",") + ".json")
+    response = conn.get("search/2/reverseGeocode/" + lat_lon.join(",") + ".json")
 
-    {status: response.status, data: JSON.parse(response.body, symbolize_names: true)}
+    response_conversion(response)
   end
 
-  def self.get(query)
-    conn.get(query)
+  # @param geo: a hash with lat: and lon: keys
+  def self.atm_json(geo)
+    response = conn.get("search/2/categorySearch/automatic%20teller%20machines.json") do |req|
+      req.params.merge!(
+        "lat" => geo[:lat],
+        "lon" => geo[:lon]
+      )
+    end
+
+    response_conversion(response)
   end
 
   def self.conn
@@ -16,5 +24,9 @@ class TomTomService
     Faraday.new("https://api.tomtom.com/") do |con|
       con.params["key"] = Rails.application.credentials.tomtom
     end
+  end
+
+  def self.response_conversion(response)
+    {status: response.status, data: JSON.parse(response.body, symbolize_names: true)}
   end
 end
