@@ -3,7 +3,10 @@ require_relative "../../../serializers/atm_serializer"
 
 class Api::V0::MarketsController < ApplicationController
   def index
-    markets = Market.all
+    records_per_page = params.fetch(:per_page, 20).to_i
+    page = params.fetch(:page, 1).to_i
+    markets = Market.offset(records_per_page * (page - 1)).limit(records_per_page)
+
     render json: {
       data: markets.map do |market|
         {
