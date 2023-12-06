@@ -1,3 +1,6 @@
+require_relative "../../../facades/atm_facade"
+require_relative "../../../serializers/atm_serializer"
+
 class Api::V0::MarketsController < ApplicationController
   def index
     markets = Market.all
@@ -52,6 +55,11 @@ class Api::V0::MarketsController < ApplicationController
 
   def nearest_atms
     mrkt = Market.find_by(id: params[:id])
+    if mrkt
+      render json: ATMSerializer.new(ATMFacade.atms(mrkt))
+    else
+      render json: {errors: "Not Found"}, status: :not_found
+    end
   end
 
   private

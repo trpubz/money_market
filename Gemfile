@@ -51,6 +51,7 @@ group :development, :test do
   gem "jsonapi-serializer"
   gem "faraday"
   gem "webmock"
+  gem "vcr"
 end
 
 group :development do

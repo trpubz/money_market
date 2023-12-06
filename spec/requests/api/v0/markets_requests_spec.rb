@@ -241,4 +241,30 @@ describe "Markets API" do
       end
     end
   end
+
+  describe "#nearest_atms" do
+    context "good request from valid market id" do
+      it "returns json data and 200 ok status", :vcr do
+        mrkt = create(
+          :market,
+          id: 330318,
+          name: "Uptown Ankeny Farmers Market",
+          lat: "41.729882",
+          lon: "-93.608108")
+
+        get nearest_atms_api_v0_market_path(mrkt)
+
+        results = JSON.parse(response.body, symbolize_names: true)[:data]
+
+        expect(results).to be_an Array
+
+        attrs = results.first[:attributes]
+        expect(attrs).to have_key :name
+        expect(attrs).to have_key :address
+        expect(attrs).to have_key :distance
+        expect(attrs).to have_key :lat
+        expect(attrs).to have_key :lon
+      end
+    end
+  end
 end
