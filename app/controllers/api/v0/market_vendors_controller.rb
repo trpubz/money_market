@@ -27,7 +27,8 @@ class Api::V0::MarketVendorsController < ApplicationController
       mrkt_vndr.destroy!
       render json: {}, status: :no_content
     else
-      render json: {errors: "No MarketVendor for #{p.to_s}"}, status: :not_found
+      raise ActiveRecord::RecordNotFound, "No MarketVendor for #{p.to_s}"
+      # render json: {errors: "No MarketVendor for #{p.to_s}"}, status: :not_found
     end
   end
 
