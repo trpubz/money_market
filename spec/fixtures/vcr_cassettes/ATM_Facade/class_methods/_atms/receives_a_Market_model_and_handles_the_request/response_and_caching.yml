@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.tomtom.com/search/2/geocode/64263%20Lang%20Vista%20North%20Elmo%20Rio%20Grande%20KY%2034484.json?key=<TOMTOM_API_KEY>
+    uri: https://api.tomtom.com/search/2/geocode/1400%20U%20Street%20NW%20Washington%20DC%20DC%20.json?key=<TOMTOM_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 07 Dec 2023 17:37:30 GMT
+      - Thu, 07 Dec 2023 17:42:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -27,13 +27,13 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Tracking-Id:
-      - 69e4f3bd-ffa8-411e-88ea-23980a5eaa63
+      - 4cb8e589-8619-4ba5-a34e-569e42beb95a
       Access-Control-Expose-Headers:
       - Tracking-ID
       X-Apigee.target-Latency:
-      - '261'
+      - '195'
       X-Envoy-Upstream-Service-Time:
-      - '273'
+      - '209'
       Server:
       - tomtom
       X-Envoy-Attempt-Count:
@@ -44,12 +44,75 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        eyJzdW1tYXJ5Ijp7InF1ZXJ5IjoiNjQyNjMgbGFuZyB2aXN0YSBub3J0aCBlbG1vIHJpbyBncmFuZGUga3kgMzQ0ODQiLCJxdWVyeVR5cGUiOiJOT05fTkVBUiIsInF1ZXJ5VGltZSI6MjU5LCJudW1SZXN1bHRzIjoyLCJvZmZzZXQiOjAsInRvdGFsUmVzdWx0cyI6MiwiZnV6enlMZXZlbCI6Mn0sInJlc3VsdHMiOlt7InR5cGUiOiJDcm9zcyBTdHJlZXQiLCJpZCI6InlHaTBlTXl1V256TER4ckdFYjlDY0EiLCJzY29yZSI6NS43ODUzNzY1NDg4LCJtYXRjaENvbmZpZGVuY2UiOnsic2NvcmUiOjAuMjQ2Mjc3NTUxNzcxMTI3MDZ9LCJhZGRyZXNzIjp7InN0cmVldE5hbWUiOiJSdWEgRG91dG9yIFRlbG1vIFZlcmdhcmEgJiBSdWEgTmVsc29uIFphbmciLCJtdW5pY2lwYWxpdHlTdWJkaXZpc2lvbiI6IlBhcnRlbm9uIiwibXVuaWNpcGFsaXR5IjoiUG9ydG8gQWxlZ3JlIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiUlMiLCJwb3N0YWxDb2RlIjoiOTE1MzAiLCJjb3VudHJ5Q29kZSI6IkJSIiwiY291bnRyeSI6IkJyYXNpbCIsImNvdW50cnlDb2RlSVNPMyI6IkJSQSIsImZyZWVmb3JtQWRkcmVzcyI6IlJ1YSBEb3V0b3IgVGVsbW8gVmVyZ2FyYSAmIFJ1YSBOZWxzb24gWmFuZywgOTE1MzAsIFBvcnRvIEFsZWdyZSIsImxvY2FsTmFtZSI6IlBvcnRvIEFsZWdyZSJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNTkwOCwibG9uIjotNTEuMTU5MDd9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0IjotMzAuMDU4MTgsImxvbiI6LTUxLjE2MDExfSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOi0zMC4wNTk5OCwibG9uIjotNTEuMTU4MDN9fX0seyJ0eXBlIjoiQWRkcmVzcyBSYW5nZSIsImlkIjoic1Nid3pFLUhPUGJPM2ZjWjJ0S3dGUSIsInNjb3JlIjo0LjE3NzkyMDgxODMsIm1hdGNoQ29uZmlkZW5jZSI6eyJzY29yZSI6MC4yOTEyNTkyNTc4Nzg3Mjg4fSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiI2NDI2MyIsInN0cmVldE5hbWUiOiJDYWx6YWRhIGRlbCBSw61vIiwibXVuaWNpcGFsaXR5U3ViZGl2aXNpb24iOiJWaXN0YXMgZGVsIEJyYXZvIiwibXVuaWNpcGFsaXR5IjoiQ2l1ZGFkIEp1w6FyZXoiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJDaGlodWFodWEiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiQ2hpaHVhaHVhIiwiY291bnRyeVN1YmRpdmlzaW9uQ29kZSI6IkNISCIsInBvc3RhbENvZGUiOiIzMjQyMyIsImNvdW50cnlDb2RlIjoiTVgiLCJjb3VudHJ5IjoiTcOpeGljbyIsImNvdW50cnlDb2RlSVNPMyI6Ik1FWCIsImZyZWVmb3JtQWRkcmVzcyI6IkNhbHphZGEgZGVsIFLDrW8gNjQyNjMsIFZpc3RhcyBkZWwgQnJhdm8sIDMyNDIzLCBDaXVkYWQgSnXDoXJleiwgQ2hpaHVhaHVhIiwibG9jYWxOYW1lIjoiQ2l1ZGFkIEp1w6FyZXoifSwicG9zaXRpb24iOnsibGF0IjozMS43NDE1OSwibG9uIjotMTA2LjQxMTA4fSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6MzEuNzQxNjYsImxvbiI6LTEwNi40MTEyMX0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0IjozMS43NDEyNiwibG9uIjotMTA2LjQxMDQzfX0sImFkZHJlc3NSYW5nZXMiOnsicmFuZ2VSaWdodCI6Ijc1NjI1QiAtIDc1NjZCIiwiZnJvbSI6eyJsYXQiOjMxLjc0MTY2LCJsb24iOi0xMDYuNDExMjF9LCJ0byI6eyJsYXQiOjMxLjc0MTI2LCJsb24iOi0xMDYuNDEwNDN9fX1dfQ==
-  recorded_at: Thu, 07 Dec 2023 17:37:30 GMT
+      string: '{"summary":{"query":"1400 u street nw washington dc dc","queryType":"NON_NEAR","queryTime":189,"numResults":10,"offset":0,"totalResults":116,"fuzzyLevel":1},"results":[{"type":"Point
+        Address","id":"rpXExiod-PbT_fl51GD0YQ","score":13.7839612961,"matchConfidence":{"score":1},"address":{"streetNumber":"1400","streetName":"U
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-3916","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 U Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91685,"lon":-77.03233},"viewport":{"topLeftPoint":{"lat":38.91775,"lon":-77.03349},"btmRightPoint":{"lat":38.91595,"lon":-77.03117}},"entryPoints":[{"type":"main","position":{"lat":38.91699,"lon":-77.03234}}]},{"type":"Point
+        Address","id":"i89QYIdvqfqHNkyD-MIBTg","score":11.7467517853,"matchConfidence":{"score":1},"address":{"streetNumber":"1400","streetName":"W
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-5804","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 W Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91904,"lon":-77.03247},"viewport":{"topLeftPoint":{"lat":38.91994,"lon":-77.03363},"btmRightPoint":{"lat":38.91814,"lon":-77.03131}},"entryPoints":[{"type":"main","position":{"lat":38.91918,"lon":-77.03247}}]},{"type":"Address
+        Range","id":"72gimWd5LHnav9wM2J5QWA","score":11.6106891632,"matchConfidence":{"score":1},"address":{"streetNumber":"1400","streetName":"V
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-5807","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 V Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91806,"lon":-77.03195},"viewport":{"topLeftPoint":{"lat":38.91811,"lon":-77.03261},"btmRightPoint":{"lat":38.9181,"lon":-77.03195}},"addressRanges":{"rangeLeft":"1400
+        - 1498","from":{"lat":38.9181,"lon":-77.03195},"to":{"lat":38.91811,"lon":-77.03261}}},{"type":"Address
+        Range","id":"2-7Bw7bX00PPtcSzDW5-LA","score":11.6106891632,"matchConfidence":{"score":1},"address":{"streetNumber":"1400","streetName":"T
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-7306","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 T Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91552,"lon":-77.03195},"viewport":{"topLeftPoint":{"lat":38.91557,"lon":-77.0326},"btmRightPoint":{"lat":38.91556,"lon":-77.03195}},"addressRanges":{"rangeLeft":"1400
+        - 1404","from":{"lat":38.91556,"lon":-77.03195},"to":{"lat":38.91557,"lon":-77.0326}}},{"type":"Address
+        Range","id":"FVLKu6B0mwFlkQTv99Jm1Q","score":11.6106891632,"matchConfidence":{"score":0.989300517593793},"address":{"streetNumber":"1400","streetName":"Swann
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-3904","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 Swann Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91479,"lon":-77.03195},"viewport":{"topLeftPoint":{"lat":38.91484,"lon":-77.03225},"btmRightPoint":{"lat":38.91484,"lon":-77.03195}},"addressRanges":{"rangeLeft":"1400
+        - 1400","from":{"lat":38.91484,"lon":-77.03195},"to":{"lat":38.91484,"lon":-77.03225}}},{"type":"Address
+        Range","id":"ZrqORjBNJwpRzVa5CxQytg","score":10.8425130844,"matchConfidence":{"score":0.9514462703659353},"address":{"streetNumber":"1400","streetName":"Florida
+        Avenue Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-5802","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 Florida Avenue Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.92004,"lon":-77.03191},"viewport":{"topLeftPoint":{"lat":38.92008,"lon":-77.03204},"btmRightPoint":{"lat":38.92005,"lon":-77.03193}},"addressRanges":{"rangeLeft":"1400
+        - 1400","from":{"lat":38.92008,"lon":-77.03193},"to":{"lat":38.92005,"lon":-77.03204}}},{"type":"Point
+        Address","id":"c65Jt5IcN029XcqXHijuvg","score":10.2507677078,"matchConfidence":{"score":0.8933086815816135},"address":{"streetNumber":"1400","streetName":"K
+        Street Northwest","municipalitySubdivision":"Downtown Washington DC","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20005","extendedPostalCode":"20005-2401","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 K Street Northwest,
+        Washington, DC 20005","localName":"Washington"},"position":{"lat":38.90217,"lon":-77.03241},"viewport":{"topLeftPoint":{"lat":38.90307,"lon":-77.03357},"btmRightPoint":{"lat":38.90127,"lon":-77.03125}},"entryPoints":[{"type":"main","position":{"lat":38.90241,"lon":-77.03242}}]},{"type":"Point
+        Address","id":"9iOOX1KqAtW5p0PGRHOB1w","score":10.2507677078,"matchConfidence":{"score":0.8933086815816135},"address":{"streetNumber":"1400","streetName":"N
+        Street Northwest","municipalitySubdivision":"Downtown Washington DC","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20005","extendedPostalCode":"20005-2803","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 N Street Northwest,
+        Washington, DC 20005","localName":"Washington"},"position":{"lat":38.90709,"lon":-77.03262},"viewport":{"topLeftPoint":{"lat":38.90799,"lon":-77.03378},"btmRightPoint":{"lat":38.90619,"lon":-77.03146}},"entryPoints":[{"type":"main","position":{"lat":38.90725,"lon":-77.03262}}]},{"type":"Point
+        Address","id":"K1T-9zRdspl0avW_ppcKfw","score":10.2507677078,"matchConfidence":{"score":0.8933086815816135},"address":{"streetNumber":"1400","streetName":"M
+        Street Northwest","municipalitySubdivision":"Downtown Washington DC","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20005","extendedPostalCode":"20005-2704","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 M Street Northwest,
+        Washington, DC 20005","localName":"Washington"},"position":{"lat":38.90525,"lon":-77.0334},"viewport":{"topLeftPoint":{"lat":38.90615,"lon":-77.03456},"btmRightPoint":{"lat":38.90435,"lon":-77.03224}},"entryPoints":[{"type":"main","position":{"lat":38.90565,"lon":-77.0334}}]},{"type":"Point
+        Address","id":"i-NIUR_2tluQiCIDCjjwtw","score":10.2507677078,"matchConfidence":{"score":0.8933086815816135},"address":{"streetNumber":"1400","streetName":"I
+        Street Northwest","municipalitySubdivision":"Downtown Washington DC","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20005","extendedPostalCode":"20005-2205","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 I Street Northwest,
+        Washington, DC 20005","localName":"Washington"},"position":{"lat":38.90102,"lon":-77.03228},"viewport":{"topLeftPoint":{"lat":38.90192,"lon":-77.03344},"btmRightPoint":{"lat":38.90012,"lon":-77.03112}},"entryPoints":[{"type":"main","position":{"lat":38.90132,"lon":-77.03228}}]}]}'
+  recorded_at: Thu, 07 Dec 2023 17:42:58 GMT
 - request:
     method: get
-    uri: https://api.tomtom.com/search/2/categorySearch/automatic%20teller%20machines.json?key=<TOMTOM_API_KEY>&lat=-30.05908&lon=-51.15907
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic%20teller%20machines.json?key=<TOMTOM_API_KEY>&lat=38.91685&lon=-77.03233
     body:
       encoding: US-ASCII
       string: ''
@@ -66,7 +129,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 07 Dec 2023 17:37:30 GMT
+      - Thu, 07 Dec 2023 17:42:59 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -74,13 +137,13 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Tracking-Id:
-      - fb811a42-e269-4538-bfa9-0f453b93ec7e
+      - a4827cd8-727f-480b-af87-af651b6eb47d
       Access-Control-Expose-Headers:
       - Tracking-ID
       X-Apigee.target-Latency:
-      - '364'
+      - '507'
       X-Envoy-Upstream-Service-Time:
-      - '377'
+      - '522'
       Server:
       - tomtom
       X-Envoy-Attempt-Count:
@@ -91,7 +154,78 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        eyJzdW1tYXJ5Ijp7InF1ZXJ5IjoiYXV0b21hdGljIHRlbGxlciBtYWNoaW5lcyIsInF1ZXJ5VHlwZSI6Ik5PTl9ORUFSIiwicXVlcnlUaW1lIjozNjAsIm51bVJlc3VsdHMiOjEwLCJvZmZzZXQiOjAsInRvdGFsUmVzdWx0cyI6MTAwLCJmdXp6eUxldmVsIjoxLCJnZW9CaWFzIjp7ImxhdCI6LTMwLjA1OTA4LCJsb24iOi01MS4xNTkwN319LCJyZXN1bHRzIjpbeyJ0eXBlIjoiUE9JIiwiaWQiOiJnZV95Qm55ZHhDVmlRdFRrWW5tZmd3Iiwic2NvcmUiOjkuMzQ1NTE1NTQ5MSwiZGlzdCI6MTM1LjkzMDQ0NCwiaW5mbyI6InNlYXJjaDp0YTowNzYwMDkwMjY3NDYyOTEtQlIiLCJwb2kiOnsibmFtZSI6IkJhbmNvMjRIb3JhcyIsImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJ1cmwiOiJ3d3cuYmFuY28yNGhvcmFzLmNvbS5iciIsImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7Im11bmljaXBhbGl0eVN1YmRpdmlzaW9uIjoiUGFydGVub24iLCJtdW5pY2lwYWxpdHkiOiJQb3J0byBBbGVncmUiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJSaW8gR3JhbmRlIGRvIFN1bCIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJSaW8gR3JhbmRlIGRvIFN1bCIsImNvdW50cnlTdWJkaXZpc2lvbkNvZGUiOiJSUyIsInBvc3RhbENvZGUiOiI5MTUzMCIsImNvdW50cnlDb2RlIjoiQlIiLCJjb3VudHJ5IjoiQnJhc2lsIiwiY291bnRyeUNvZGVJU08zIjoiQlJBIiwiZnJlZWZvcm1BZGRyZXNzIjoiOTE1MzAsIFBvcnRvIEFsZWdyZSIsImxvY2FsTmFtZSI6IlBvcnRvIEFsZWdyZSJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNiwibG9uIjotNTEuMTZ9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0IjotMzAuMDU5MSwibG9uIjotNTEuMTYxMDR9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6LTMwLjA2MDksImxvbiI6LTUxLjE1ODk2fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6LTMwLjA2MDE1LCJsb24iOi01MS4xNjAwOX19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiJJc0hMMkxjVy1na0tjS0NRRWJXbW93Iiwic2NvcmUiOjkuMzQ1NTE1NTQ5MSwiZGlzdCI6MTM1LjkzMDQ0NCwiaW5mbyI6InNlYXJjaDp0YTowNzYwMDkwMjg1MTM0MjQtQlIiLCJwb2kiOnsibmFtZSI6IkJyYWRlc2NvIERpYSZOb2l0ZSIsImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJtdW5pY2lwYWxpdHlTdWJkaXZpc2lvbiI6IlBhcnRlbm9uIiwibXVuaWNpcGFsaXR5IjoiUG9ydG8gQWxlZ3JlIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiUlMiLCJwb3N0YWxDb2RlIjoiOTE1MzAiLCJjb3VudHJ5Q29kZSI6IkJSIiwiY291bnRyeSI6IkJyYXNpbCIsImNvdW50cnlDb2RlSVNPMyI6IkJSQSIsImZyZWVmb3JtQWRkcmVzcyI6IjkxNTMwLCBQb3J0byBBbGVncmUiLCJsb2NhbE5hbWUiOiJQb3J0byBBbGVncmUifSwicG9zaXRpb24iOnsibGF0IjotMzAuMDYsImxvbiI6LTUxLjE2fSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6LTMwLjA1OTEsImxvbiI6LTUxLjE2MTA0fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOi0zMC4wNjA5LCJsb24iOi01MS4xNTg5Nn19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNjAxNSwibG9uIjotNTEuMTYwMDl9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiNjk1b3R0WGhmMzZoVG1lLWI4N1VvdyIsInNjb3JlIjo5LjM0NTI1OTU4MjksImRpc3QiOjQ4Ni41OTQxMDEsImluZm8iOiJzZWFyY2g6dGE6MDc2MDA2MDAwMTk2MzM5LUJSIiwicG9pIjp7Im5hbWUiOiJDYWl4YSBFY29uw7RtaWNhIEZlZGVyYWwgRmVkZXJhbCBTYXZpbmdzIEJhbmsiLCJwaG9uZSI6Iis1NSA1MSAzMzk2LTU2NTAiLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwidXJsIjoid3d3LmNhaXhhLmdvdi5ici8iLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiI1MzAxIiwic3RyZWV0TmFtZSI6IkF2ZW5pZGEgQmVudG8gR29uw6dhbHZlcyIsIm11bmljaXBhbGl0eVN1YmRpdmlzaW9uIjoiU8OjbyBKb3PDqSIsIm11bmljaXBhbGl0eSI6IlBvcnRvIEFsZWdyZSIsImNvdW50cnlTdWJkaXZpc2lvbiI6IlJpbyBHcmFuZGUgZG8gU3VsIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IlJpbyBHcmFuZGUgZG8gU3VsIiwiY291bnRyeVN1YmRpdmlzaW9uQ29kZSI6IlJTIiwicG9zdGFsQ29kZSI6IjkxNTQwIiwiZXh0ZW5kZWRQb3N0YWxDb2RlIjoiOTE1NDAtMDAwIiwiY291bnRyeUNvZGUiOiJCUiIsImNvdW50cnkiOiJCcmFzaWwiLCJjb3VudHJ5Q29kZUlTTzMiOiJCUkEiLCJmcmVlZm9ybUFkZHJlc3MiOiJBdmVuaWRhIEJlbnRvIEdvbsOnYWx2ZXMsIDUzMDEsIDkxNTQwLTAwMCwgUG9ydG8gQWxlZ3JlIiwibG9jYWxOYW1lIjoiUG9ydG8gQWxlZ3JlIn0sInBvc2l0aW9uIjp7ImxhdCI6LTMwLjA2MjQ4MiwibG9uIjotNTEuMTYyMjUxfSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6LTMwLjA2MTU4LCJsb24iOi01MS4xNjMyOX0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0IjotMzAuMDYzMzgsImxvbiI6LTUxLjE2MTIxfX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6LTMwLjA2MjQsImxvbiI6LTUxLjE2MjIyfX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6Im1UWXV4dmt3NnRpejRBbFJGN09oa2ciLCJzY29yZSI6OS4zNDUyNTk1ODI5LCJkaXN0Ijo0ODYuNTk0MTAxLCJpbmZvIjoic2VhcmNoOnRhOjA3NjAwOTAyMDUyODAxNC1CUiIsInBvaSI6eyJuYW1lIjoiQ2FpeGEgRWxldHLDtG5pY28gLSBDYWl4YSBFY29uw7RtaWNhIEZlZGVyYWwiLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiNTMwMSIsInN0cmVldE5hbWUiOiJBdmVuaWRhIEJlbnRvIEdvbsOnYWx2ZXMiLCJtdW5pY2lwYWxpdHlTdWJkaXZpc2lvbiI6IlPDo28gSm9zw6kiLCJtdW5pY2lwYWxpdHkiOiJQb3J0byBBbGVncmUiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJSaW8gR3JhbmRlIGRvIFN1bCIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJSaW8gR3JhbmRlIGRvIFN1bCIsImNvdW50cnlTdWJkaXZpc2lvbkNvZGUiOiJSUyIsInBvc3RhbENvZGUiOiI5MTU0MCIsImV4dGVuZGVkUG9zdGFsQ29kZSI6IjkxNTQwLTAwMCIsImNvdW50cnlDb2RlIjoiQlIiLCJjb3VudHJ5IjoiQnJhc2lsIiwiY291bnRyeUNvZGVJU08zIjoiQlJBIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZlbmlkYSBCZW50byBHb27Dp2FsdmVzLCA1MzAxLCA5MTU0MC0wMDAsIFBvcnRvIEFsZWdyZSIsImxvY2FsTmFtZSI6IlBvcnRvIEFsZWdyZSJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNjI0ODIsImxvbiI6LTUxLjE2MjI1MX0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOi0zMC4wNjE1OCwibG9uIjotNTEuMTYzMjl9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6LTMwLjA2MzM4LCJsb24iOi01MS4xNjEyMX19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNjIzOSwibG9uIjotNTEuMTYyMjN9fV19LHsidHlwZSI6IlBPSSIsImlkIjoibmh4eWlKMmQ0Z2wzcVNWUWx1RHFYdyIsInNjb3JlIjo5LjM0NTE5ODczODUsImRpc3QiOjUzNy40MTM0MDYsImluZm8iOiJzZWFyY2g6dGE6MDc2MDA5MDIwNzg3NDc1LUJSIiwicG9pIjp7Im5hbWUiOiJWaXAgSW50ZXJjYXAiLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiNTMwMCIsInN0cmVldE5hbWUiOiJBdmVuaWRhIEJlbnRvIEdvbsOnYWx2ZXMiLCJtdW5pY2lwYWxpdHlTdWJkaXZpc2lvbiI6IlBhcnRlbm9uIiwibXVuaWNpcGFsaXR5IjoiUG9ydG8gQWxlZ3JlIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiUlMiLCJwb3N0YWxDb2RlIjoiOTE1NDAiLCJleHRlbmRlZFBvc3RhbENvZGUiOiI5MTU0MC0wMDAiLCJjb3VudHJ5Q29kZSI6IkJSIiwiY291bnRyeSI6IkJyYXNpbCIsImNvdW50cnlDb2RlSVNPMyI6IkJSQSIsImZyZWVmb3JtQWRkcmVzcyI6IkF2ZW5pZGEgQmVudG8gR29uw6dhbHZlcywgNTMwMCwgOTE1NDAtMDAwLCBQb3J0byBBbGVncmUiLCJsb2NhbE5hbWUiOiJQb3J0byBBbGVncmUifSwicG9zaXRpb24iOnsibGF0IjotMzAuMDYxOTg3LCJsb24iOi01MS4xNjM1MzF9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0IjotMzAuMDYxMDksImxvbiI6LTUxLjE2NDU3fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOi0zMC4wNjI4OSwibG9uIjotNTEuMTYyNDl9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0IjotMzAuMDYyMSwibG9uIjotNTEuMTYzNTJ9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiR2hmRjZBb1ZrQmxxd1FNVXA0S01ZdyIsInNjb3JlIjo5LjM0NTE5NzY4OTQsImRpc3QiOjUzNy43OTQ4NjEsImluZm8iOiJzZWFyY2g6dGE6MDc2MDA2MDAwMTk3NTc3LUJSIiwicG9pIjp7Im5hbWUiOiJCYW5jbzI0SG9yYXMiLCJwaG9uZSI6Iis1NSA4MDAgNTYgMjQwMCIsImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJ1cmwiOiJiYW5jbzI0aG9yYXMuY29tLmJyLyIsImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjUzMDAiLCJzdHJlZXROYW1lIjoiQXZlbmlkYSBCZW50byBHb27Dp2FsdmVzIiwibXVuaWNpcGFsaXR5U3ViZGl2aXNpb24iOiJQYXJ0ZW5vbiIsIm11bmljaXBhbGl0eSI6IlBvcnRvIEFsZWdyZSIsImNvdW50cnlTdWJkaXZpc2lvbiI6IlJpbyBHcmFuZGUgZG8gU3VsIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IlJpbyBHcmFuZGUgZG8gU3VsIiwiY291bnRyeVN1YmRpdmlzaW9uQ29kZSI6IlJTIiwicG9zdGFsQ29kZSI6IjkxNTQwIiwiZXh0ZW5kZWRQb3N0YWxDb2RlIjoiOTE1NDAtMDAwIiwiY291bnRyeUNvZGUiOiJCUiIsImNvdW50cnkiOiJCcmFzaWwiLCJjb3VudHJ5Q29kZUlTTzMiOiJCUkEiLCJmcmVlZm9ybUFkZHJlc3MiOiJBdmVuaWRhIEJlbnRvIEdvbsOnYWx2ZXMsIDUzMDAsIDkxNTQwLTAwMCwgUG9ydG8gQWxlZ3JlIiwibG9jYWxOYW1lIjoiUG9ydG8gQWxlZ3JlIn0sInBvc2l0aW9uIjp7ImxhdCI6LTMwLjA2MjAxMywibG9uIjotNTEuMTYzNTE0fSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6LTMwLjA2MTExLCJsb24iOi01MS4xNjQ1NX0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0IjotMzAuMDYyOTEsImxvbiI6LTUxLjE2MjQ3fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6LTMwLjA2MjEsImxvbiI6LTUxLjE2MzUyfX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6Ikh4aDhETjVxdUNDSmhPMFp0cDZNM2ciLCJzY29yZSI6OS4zNDUwOTkwNzk1LCJkaXN0Ijo2MTEuMTU1NDg5LCJpbmZvIjoic2VhcmNoOnRhOjA3NjAwOTAyMDAwNTUwOS1CUiIsInBvaSI6eyJuYW1lIjoiQ2FpeGEgRWxldHLDtG5pY28gLSBCYW5jbyBTYW50YW5kZXIiLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiMzg1Iiwic3RyZWV0TmFtZSI6IlJ1YSBBbGJpb24iLCJtdW5pY2lwYWxpdHlTdWJkaXZpc2lvbiI6IlBhcnRlbm9uIiwibXVuaWNpcGFsaXR5IjoiUG9ydG8gQWxlZ3JlIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiUlMiLCJwb3N0YWxDb2RlIjoiOTE1MzAiLCJleHRlbmRlZFBvc3RhbENvZGUiOiI5MTUzMC0wMTAiLCJjb3VudHJ5Q29kZSI6IkJSIiwiY291bnRyeSI6IkJyYXNpbCIsImNvdW50cnlDb2RlSVNPMyI6IkJSQSIsImZyZWVmb3JtQWRkcmVzcyI6IlJ1YSBBbGJpb24sIDM4NSwgOTE1MzAtMDEwLCBQb3J0byBBbGVncmUiLCJsb2NhbE5hbWUiOiJQb3J0byBBbGVncmUifSwicG9zaXRpb24iOnsibGF0IjotMzAuMDU3NTkzLCJsb24iOi01MS4xNjUxODN9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0IjotMzAuMDU2NjksImxvbiI6LTUxLjE2NjIyfSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOi0zMC4wNTg0OSwibG9uIjotNTEuMTY0MTR9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0IjotMzAuMDU3NTgsImxvbiI6LTUxLjE2NTI5fX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IjdLZG5MaWxrSkZaUmE4azk3eGhoU0EiLCJzY29yZSI6OS4zNDUwODAxOTY4LCJkaXN0Ijo2MjQuNDY0MDE4LCJpbmZvIjoic2VhcmNoOnRhOjA3NjAwOTAyNDcyMjAwNS1CUiIsInBvaSI6eyJuYW1lIjoiUGFlIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjQwMSIsInN0cmVldE5hbWUiOiJBdmVuaWRhIEpvYXF1aW0gUG9ydG8gVmlsbGFub3ZhIiwibXVuaWNpcGFsaXR5U3ViZGl2aXNpb24iOiJKYXJkaW0gQ2FydmFsaG8iLCJtdW5pY2lwYWxpdHkiOiJQb3J0byBBbGVncmUiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJSaW8gR3JhbmRlIGRvIFN1bCIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJSaW8gR3JhbmRlIGRvIFN1bCIsImNvdW50cnlTdWJkaXZpc2lvbkNvZGUiOiJSUyIsInBvc3RhbENvZGUiOiI5MTQxMCIsImV4dGVuZGVkUG9zdGFsQ29kZSI6IjkxNDEwLTQwMCIsImNvdW50cnlDb2RlIjoiQlIiLCJjb3VudHJ5IjoiQnJhc2lsIiwiY291bnRyeUNvZGVJU08zIjoiQlJBIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZlbmlkYSBKb2FxdWltIFBvcnRvIFZpbGxhbm92YSwgNDAxLCA5MTQxMC00MDAsIFBvcnRvIEFsZWdyZSIsImxvY2FsTmFtZSI6IlBvcnRvIEFsZWdyZSJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNTM0NjgsImxvbiI6LTUxLjE1OTMxfSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6LTMwLjA1MjI5LCJsb24iOi01MS4xNjA2N30sImJ0bVJpZ2h0UG9pbnQiOnsibGF0IjotMzAuMDU0NjQsImxvbiI6LTUxLjE1Nzk1fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6LTMwLjA1MzU2LCJsb24iOi01MS4xNTk0OH19LHsidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNTIzMSwibG9uIjotNTEuMTU5NTV9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiOV9hNmZEd0NlaWlqcVRtbFI2bUc2USIsInNjb3JlIjo5LjM0NDkxNzU5NTMsImRpc3QiOjcyNy4zNzM2MTIsImluZm8iOiJzZWFyY2g6dGE6MDc2MDA5MDI0OTI2NzYwLUJSIiwicG9pIjp7Im5hbWUiOiJDYXJyZWZvdXIgUG9ydG8gQWxlZ3JlIEkiLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiMTExIiwic3RyZWV0TmFtZSI6IlJ1YSBBbGJpb24iLCJtdW5pY2lwYWxpdHlTdWJkaXZpc2lvbiI6IlBhcnRlbm9uIiwibXVuaWNpcGFsaXR5IjoiUG9ydG8gQWxlZ3JlIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiUmlvIEdyYW5kZSBkbyBTdWwiLCJjb3VudHJ5U3ViZGl2aXNpb25Db2RlIjoiUlMiLCJwb3N0YWxDb2RlIjoiOTE1MzAiLCJleHRlbmRlZFBvc3RhbENvZGUiOiI5MTUzMC0wMTAiLCJjb3VudHJ5Q29kZSI6IkJSIiwiY291bnRyeSI6IkJyYXNpbCIsImNvdW50cnlDb2RlSVNPMyI6IkJSQSIsImZyZWVmb3JtQWRkcmVzcyI6IlJ1YSBBbGJpb24sIDExMSwgOTE1MzAtMDEwLCBQb3J0byBBbGVncmUiLCJsb2NhbE5hbWUiOiJQb3J0byBBbGVncmUifSwicG9zaXRpb24iOnsibGF0IjotMzAuMDYxNzMsImxvbiI6LTUxLjE2NTk4fSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6LTMwLjA2MDgzLCJsb24iOi01MS4xNjcwMn0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0IjotMzAuMDYyNjMsImxvbiI6LTUxLjE2NDk0fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6LTMwLjA2MTcyLCJsb24iOi01MS4xNjYwN319XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiJldzZESVR1aU5nV1Vfc3NqRFFTcEpBIiwic2NvcmUiOjkuMzQ0NTQ4MzMyNiwiZGlzdCI6OTE4Ljg3NjQyLCJpbmZvIjoic2VhcmNoOnRhOjA3NjAwOTAyNTA0NTY2OC1CUiIsInBvaSI6eyJuYW1lIjoiU2hvcCBCb3VyYm9uIElwIEkiLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiNjczNyIsInN0cmVldE5hbWUiOiJBdmVuaWRhIElwaXJhbmdhIiwibXVuaWNpcGFsaXR5U3ViZGl2aXNpb24iOiJQYXJ0ZW5vbiIsIm11bmljaXBhbGl0eSI6IlBvcnRvIEFsZWdyZSIsImNvdW50cnlTdWJkaXZpc2lvbiI6IlJpbyBHcmFuZGUgZG8gU3VsIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IlJpbyBHcmFuZGUgZG8gU3VsIiwiY291bnRyeVN1YmRpdmlzaW9uQ29kZSI6IlJTIiwicG9zdGFsQ29kZSI6IjkxNTMwIiwiZXh0ZW5kZWRQb3N0YWxDb2RlIjoiOTE1MzAtMDAxIiwiY291bnRyeUNvZGUiOiJCUiIsImNvdW50cnkiOiJCcmFzaWwiLCJjb3VudHJ5Q29kZUlTTzMiOiJCUkEiLCJmcmVlZm9ybUFkZHJlc3MiOiJBdmVuaWRhIElwaXJhbmdhLCA2NzM3LCA5MTUzMC0wMDEsIFBvcnRvIEFsZWdyZSIsImxvY2FsTmFtZSI6IlBvcnRvIEFsZWdyZSJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNTYxMDcsImxvbiI6LTUxLjE2Nzk3OH0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOi0zMC4wNTUyMSwibG9uIjotNTEuMTY5MDJ9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6LTMwLjA1NzAxLCJsb24iOi01MS4xNjY5NH19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0zMC4wNTU5OCwibG9uIjotNTEuMTY4MDN9fSx7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0IjotMzAuMDU1OTgsImxvbiI6LTUxLjE2Nzk5fX0seyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6LTMwLjA1NTk4LCJsb24iOi01MS4xNjc5OH19XX1dfQ==
-  recorded_at: Thu, 07 Dec 2023 17:37:30 GMT
+      string: '{"summary":{"query":"automatic teller machines","queryType":"NON_NEAR","queryTime":504,"numResults":10,"offset":0,"totalResults":100,"fuzzyLevel":1,"geoBias":{"lat":38.91685,"lon":-77.03233}},"results":[{"type":"POI","id":"1Qq3mZzGBBk04e67uvMj2Q","score":9.3455354809,"dist":34.811433,"info":"search:ta:840119000331504-US","poi":{"name":"Wells
+        Fargo Washington","phone":"+1 202-594-3357","brands":[{"name":"Wells Fargo"}],"categorySet":[{"id":7397}],"url":"www.wellsfargo.com","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1934","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4431","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1934 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916554,"lon":-77.032199},"viewport":{"topLeftPoint":{"lat":38.91745,"lon":-77.03335},"btmRightPoint":{"lat":38.91565,"lon":-77.03104}},"entryPoints":[{"type":"main","position":{"lat":38.91655,"lon":-77.03196}}]},{"type":"POI","id":"WOUuLXiY1DeI2BvyNI5FnA","score":9.3455354809,"dist":35.522566,"info":"search:ta:840117000001946-US","poi":{"name":"Pnc
+        Bank, National Association","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"14th Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4431","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916967,"lon":-77.031948},"viewport":{"topLeftPoint":{"lat":38.91787,"lon":-77.0331},"btmRightPoint":{"lat":38.91607,"lon":-77.03079}},"entryPoints":[{"type":"main","position":{"lat":38.91697,"lon":-77.03195}}]},{"type":"POI","id":"5676W9Dc6JTr3vcPQGnimg","score":9.3455333828,"dist":57.155512,"info":"search:ta:840119000467536-US","poi":{"name":"Prosperity
+        Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1356","streetName":"U Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4445","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1356 U Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916836,"lon":-77.03167},"viewport":{"topLeftPoint":{"lat":38.91774,"lon":-77.03283},"btmRightPoint":{"lat":38.91594,"lon":-77.03051}},"entryPoints":[{"type":"main","position":{"lat":38.917,"lon":-77.03167}}]},{"type":"POI","id":"WOHleMcF6iy3QOUwOwGKbA","score":9.3455333828,"dist":52.79124,"info":"search:ta:840117000006552-US","poi":{"name":"Capital
+        One Bank","phone":"+1 202-890-4518","brands":[{"name":"Capital One Bank"}],"categorySet":[{"id":7397}],"url":"www.capitalonebank.com/?external_id=ENTSOC_YX_YextRetail_Profile_0101","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1947","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4448","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1947 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916874,"lon":-77.031721},"viewport":{"topLeftPoint":{"lat":38.91777,"lon":-77.03288},"btmRightPoint":{"lat":38.91597,"lon":-77.03057}},"entryPoints":[{"type":"main","position":{"lat":38.91688,"lon":-77.03195}}]},{"type":"POI","id":"lle19wafVfNzbiDHlHse2Q","score":9.3455333828,"dist":55.17943,"info":"search:ta:840119000331784-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1939","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4448","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1939 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916729,"lon":-77.031712},"viewport":{"topLeftPoint":{"lat":38.91763,"lon":-77.03287},"btmRightPoint":{"lat":38.91583,"lon":-77.03056}},"entryPoints":[{"type":"main","position":{"lat":38.91675,"lon":-77.03195}}]},{"type":"POI","id":"uDu2Qv4UfcoRWyJJBKXaqA","score":9.3455312847,"dist":73.745216,"info":"search:ta:840119000338152-US","poi":{"name":"Prosperity
+        Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1348","streetName":"U Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4445","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1348 U Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916838,"lon":-77.031478},"viewport":{"topLeftPoint":{"lat":38.91774,"lon":-77.03263},"btmRightPoint":{"lat":38.91594,"lon":-77.03032}},"entryPoints":[{"type":"main","position":{"lat":38.91701,"lon":-77.03148}}]},{"type":"POI","id":"2DjlvXFxwj-qd88mqaifUw","score":9.3455291866,"dist":80.804344,"info":"search:ta:840119000464578-US","poi":{"name":"ATM
+        at Hi tech Bankcard Service","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"2000","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4400","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"2000 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.917564,"lon":-77.032504},"viewport":{"topLeftPoint":{"lat":38.91846,"lon":-77.03366},"btmRightPoint":{"lat":38.91666,"lon":-77.03135}},"entryPoints":[{"type":"main","position":{"lat":38.91757,"lon":-77.03195}}]},{"type":"POI","id":"D0i2nmyHfeglhs12f74wRA","score":9.3455281376,"dist":89.61747,"info":"search:ta:840119000272259-US","poi":{"name":"ATM
+        at Netbank Payment Systems","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"2013","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4436","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"2013 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.917458,"lon":-77.03165},"viewport":{"topLeftPoint":{"lat":38.91836,"lon":-77.03281},"btmRightPoint":{"lat":38.91656,"lon":-77.03049}},"entryPoints":[{"type":"main","position":{"lat":38.91746,"lon":-77.03195}}]},{"type":"POI","id":"52-Vns26g6OfGFXnfyjTdA","score":9.3455281376,"dist":84.953634,"info":"search:ta:840119000448783-US","poi":{"name":"Prosperity
+        Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"2011","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4436","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"2011 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.917399,"lon":-77.031647},"viewport":{"topLeftPoint":{"lat":38.9183,"lon":-77.0328},"btmRightPoint":{"lat":38.9165,"lon":-77.03049}},"entryPoints":[{"type":"minor","position":{"lat":38.91738,"lon":-77.03195}},{"type":"main","position":{"lat":38.9174,"lon":-77.03195}}]},{"type":"POI","id":"oqV0FCWS1-z1oXPUxnI13g","score":9.3455270885,"dist":92.703076,"info":"search:ta:840117000013647-US","poi":{"name":"City
+        First Bank Of D.C., Na","brands":[{"name":"First Bank"},{"name":"Fidelity"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1432","streetName":"U Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-3987","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1432 U Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916631,"lon":-77.033364},"viewport":{"topLeftPoint":{"lat":38.91753,"lon":-77.03452},"btmRightPoint":{"lat":38.91573,"lon":-77.03221}},"entryPoints":[{"type":"main","position":{"lat":38.91699,"lon":-77.03333}}]}]}'
+  recorded_at: Thu, 07 Dec 2023 17:42:59 GMT
 recorded_with: VCR 6.2.0

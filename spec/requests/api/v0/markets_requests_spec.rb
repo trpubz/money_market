@@ -245,12 +245,15 @@ describe "Markets API" do
   describe "#nearest_atms" do
     context "good request from valid market id" do
       it "returns json data and 200 ok status", :vcr do
-        mrkt = create(
-          :market,
-          id: 330318,
-          name: "Uptown Ankeny Farmers Market",
-          lat: "41.729882",
-          lon: "-93.608108")
+        market_params = {
+          name: "14&U Farmers' Market",
+          street: "1400 U Street NW",
+          city: "Washington",
+          county: "DC",
+          state: "DC"
+        }
+
+        mrkt = Market.create(market_params)
 
         get nearest_atms_api_v0_market_path(mrkt)
 
