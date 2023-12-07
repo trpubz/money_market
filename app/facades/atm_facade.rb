@@ -6,7 +6,8 @@ class ATMFacade
     atms = Rails.cache.read("atms-#{mrkt.id}")
 
     if atms.nil?
-      response = TomTomService.atm_json({ lat: mrkt.lat, lon: mrkt.lon })
+      lat, lon = TomTomService.lat_lon_from_address(mrkt.url_encoded_address)
+      response = TomTomService.atm_json({lat: lat, lon: lon})
       data = response[:data]
 
       atms = data[:results].map do |result|

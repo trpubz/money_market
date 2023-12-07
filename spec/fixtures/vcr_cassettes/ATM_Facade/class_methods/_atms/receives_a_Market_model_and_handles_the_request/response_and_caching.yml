@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.tomtom.com/search/2/categorySearch/automatic%20teller%20machines.json?key=<TOMTOM_API_KEY>&lat=33.73143&lon=-112.23536
+    uri: https://api.tomtom.com/search/2/geocode/1400%20U%20Street%20NW%20Washington%20DC%20DC%20.json?key=<TOMTOM_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 06 Dec 2023 20:04:02 GMT
+      - Thu, 07 Dec 2023 17:42:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -27,13 +27,13 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Tracking-Id:
-      - f33e065e-c7a9-46c9-9954-fd65af2df999
+      - 4cb8e589-8619-4ba5-a34e-569e42beb95a
       Access-Control-Expose-Headers:
       - Tracking-ID
       X-Apigee.target-Latency:
-      - '397'
+      - '195'
       X-Envoy-Upstream-Service-Time:
-      - '409'
+      - '209'
       Server:
       - tomtom
       X-Envoy-Attempt-Count:
@@ -44,61 +44,188 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"summary":{"query":"automatic teller machines","queryType":"NON_NEAR","queryTime":387,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":33.73143,"lon":-112.23536}},"results":[{"type":"POI","id":"X-bBkIxr9E-Ao1PxPT6rNA","score":9.3382435915,"dist":2497.310003,"info":"search:ta:840049002412635-US","poi":{"name":"Prosperity
+      string: '{"summary":{"query":"1400 u street nw washington dc dc","queryType":"NON_NEAR","queryTime":189,"numResults":10,"offset":0,"totalResults":116,"fuzzyLevel":1},"results":[{"type":"Point
+        Address","id":"rpXExiod-PbT_fl51GD0YQ","score":13.7839612961,"matchConfidence":{"score":1},"address":{"streetNumber":"1400","streetName":"U
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-3916","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 U Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91685,"lon":-77.03233},"viewport":{"topLeftPoint":{"lat":38.91775,"lon":-77.03349},"btmRightPoint":{"lat":38.91595,"lon":-77.03117}},"entryPoints":[{"type":"main","position":{"lat":38.91699,"lon":-77.03234}}]},{"type":"Point
+        Address","id":"i89QYIdvqfqHNkyD-MIBTg","score":11.7467517853,"matchConfidence":{"score":1},"address":{"streetNumber":"1400","streetName":"W
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-5804","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 W Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91904,"lon":-77.03247},"viewport":{"topLeftPoint":{"lat":38.91994,"lon":-77.03363},"btmRightPoint":{"lat":38.91814,"lon":-77.03131}},"entryPoints":[{"type":"main","position":{"lat":38.91918,"lon":-77.03247}}]},{"type":"Address
+        Range","id":"72gimWd5LHnav9wM2J5QWA","score":11.6106891632,"matchConfidence":{"score":1},"address":{"streetNumber":"1400","streetName":"V
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-5807","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 V Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91806,"lon":-77.03195},"viewport":{"topLeftPoint":{"lat":38.91811,"lon":-77.03261},"btmRightPoint":{"lat":38.9181,"lon":-77.03195}},"addressRanges":{"rangeLeft":"1400
+        - 1498","from":{"lat":38.9181,"lon":-77.03195},"to":{"lat":38.91811,"lon":-77.03261}}},{"type":"Address
+        Range","id":"2-7Bw7bX00PPtcSzDW5-LA","score":11.6106891632,"matchConfidence":{"score":1},"address":{"streetNumber":"1400","streetName":"T
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-7306","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 T Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91552,"lon":-77.03195},"viewport":{"topLeftPoint":{"lat":38.91557,"lon":-77.0326},"btmRightPoint":{"lat":38.91556,"lon":-77.03195}},"addressRanges":{"rangeLeft":"1400
+        - 1404","from":{"lat":38.91556,"lon":-77.03195},"to":{"lat":38.91557,"lon":-77.0326}}},{"type":"Address
+        Range","id":"FVLKu6B0mwFlkQTv99Jm1Q","score":11.6106891632,"matchConfidence":{"score":0.989300517593793},"address":{"streetNumber":"1400","streetName":"Swann
+        Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-3904","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 Swann Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.91479,"lon":-77.03195},"viewport":{"topLeftPoint":{"lat":38.91484,"lon":-77.03225},"btmRightPoint":{"lat":38.91484,"lon":-77.03195}},"addressRanges":{"rangeLeft":"1400
+        - 1400","from":{"lat":38.91484,"lon":-77.03195},"to":{"lat":38.91484,"lon":-77.03225}}},{"type":"Address
+        Range","id":"ZrqORjBNJwpRzVa5CxQytg","score":10.8425130844,"matchConfidence":{"score":0.9514462703659353},"address":{"streetNumber":"1400","streetName":"Florida
+        Avenue Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-5802","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 Florida Avenue Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.92004,"lon":-77.03191},"viewport":{"topLeftPoint":{"lat":38.92008,"lon":-77.03204},"btmRightPoint":{"lat":38.92005,"lon":-77.03193}},"addressRanges":{"rangeLeft":"1400
+        - 1400","from":{"lat":38.92008,"lon":-77.03193},"to":{"lat":38.92005,"lon":-77.03204}}},{"type":"Point
+        Address","id":"c65Jt5IcN029XcqXHijuvg","score":10.2507677078,"matchConfidence":{"score":0.8933086815816135},"address":{"streetNumber":"1400","streetName":"K
+        Street Northwest","municipalitySubdivision":"Downtown Washington DC","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20005","extendedPostalCode":"20005-2401","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 K Street Northwest,
+        Washington, DC 20005","localName":"Washington"},"position":{"lat":38.90217,"lon":-77.03241},"viewport":{"topLeftPoint":{"lat":38.90307,"lon":-77.03357},"btmRightPoint":{"lat":38.90127,"lon":-77.03125}},"entryPoints":[{"type":"main","position":{"lat":38.90241,"lon":-77.03242}}]},{"type":"Point
+        Address","id":"9iOOX1KqAtW5p0PGRHOB1w","score":10.2507677078,"matchConfidence":{"score":0.8933086815816135},"address":{"streetNumber":"1400","streetName":"N
+        Street Northwest","municipalitySubdivision":"Downtown Washington DC","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20005","extendedPostalCode":"20005-2803","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 N Street Northwest,
+        Washington, DC 20005","localName":"Washington"},"position":{"lat":38.90709,"lon":-77.03262},"viewport":{"topLeftPoint":{"lat":38.90799,"lon":-77.03378},"btmRightPoint":{"lat":38.90619,"lon":-77.03146}},"entryPoints":[{"type":"main","position":{"lat":38.90725,"lon":-77.03262}}]},{"type":"Point
+        Address","id":"K1T-9zRdspl0avW_ppcKfw","score":10.2507677078,"matchConfidence":{"score":0.8933086815816135},"address":{"streetNumber":"1400","streetName":"M
+        Street Northwest","municipalitySubdivision":"Downtown Washington DC","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20005","extendedPostalCode":"20005-2704","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 M Street Northwest,
+        Washington, DC 20005","localName":"Washington"},"position":{"lat":38.90525,"lon":-77.0334},"viewport":{"topLeftPoint":{"lat":38.90615,"lon":-77.03456},"btmRightPoint":{"lat":38.90435,"lon":-77.03224}},"entryPoints":[{"type":"main","position":{"lat":38.90565,"lon":-77.0334}}]},{"type":"Point
+        Address","id":"i-NIUR_2tluQiCIDCjjwtw","score":10.2507677078,"matchConfidence":{"score":0.8933086815816135},"address":{"streetNumber":"1400","streetName":"I
+        Street Northwest","municipalitySubdivision":"Downtown Washington DC","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20005","extendedPostalCode":"20005-2205","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1400 I Street Northwest,
+        Washington, DC 20005","localName":"Washington"},"position":{"lat":38.90102,"lon":-77.03228},"viewport":{"topLeftPoint":{"lat":38.90192,"lon":-77.03344},"btmRightPoint":{"lat":38.90012,"lon":-77.03112}},"entryPoints":[{"type":"main","position":{"lat":38.90132,"lon":-77.03228}}]}]}'
+  recorded_at: Thu, 07 Dec 2023 17:42:58 GMT
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic%20teller%20machines.json?key=<TOMTOM_API_KEY>&lat=38.91685&lon=-77.03233
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Dec 2023 17:42:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - a4827cd8-727f-480b-af87-af651b6eb47d
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '507'
+      X-Envoy-Upstream-Service-Time:
+      - '522'
+      Server:
+      - tomtom
+      X-Envoy-Attempt-Count:
+      - '1'
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic teller machines","queryType":"NON_NEAR","queryTime":504,"numResults":10,"offset":0,"totalResults":100,"fuzzyLevel":1,"geoBias":{"lat":38.91685,"lon":-77.03233}},"results":[{"type":"POI","id":"1Qq3mZzGBBk04e67uvMj2Q","score":9.3455354809,"dist":34.811433,"info":"search:ta:840119000331504-US","poi":{"name":"Wells
+        Fargo Washington","phone":"+1 202-594-3357","brands":[{"name":"Wells Fargo"}],"categorySet":[{"id":7397}],"url":"www.wellsfargo.com","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1934","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4431","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1934 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916554,"lon":-77.032199},"viewport":{"topLeftPoint":{"lat":38.91745,"lon":-77.03335},"btmRightPoint":{"lat":38.91565,"lon":-77.03104}},"entryPoints":[{"type":"main","position":{"lat":38.91655,"lon":-77.03196}}]},{"type":"POI","id":"WOUuLXiY1DeI2BvyNI5FnA","score":9.3455354809,"dist":35.522566,"info":"search:ta:840117000001946-US","poi":{"name":"Pnc
+        Bank, National Association","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"14th Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4431","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916967,"lon":-77.031948},"viewport":{"topLeftPoint":{"lat":38.91787,"lon":-77.0331},"btmRightPoint":{"lat":38.91607,"lon":-77.03079}},"entryPoints":[{"type":"main","position":{"lat":38.91697,"lon":-77.03195}}]},{"type":"POI","id":"5676W9Dc6JTr3vcPQGnimg","score":9.3455333828,"dist":57.155512,"info":"search:ta:840119000467536-US","poi":{"name":"Prosperity
         Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"27501","streetName":"North Lake
-        Pleasant Road","municipality":"Peoria","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85383","extendedPostalCode":"85383-1340","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"27501 North Lake Pleasant
-        Road, Peoria, AZ 85383","localName":"Peoria"},"position":{"lat":33.733643,"lon":-112.262234},"viewport":{"topLeftPoint":{"lat":33.73607,"lon":-112.26515},"btmRightPoint":{"lat":33.73122,"lon":-112.25932}},"entryPoints":[{"type":"main","position":{"lat":33.73352,"lon":-112.26407}},{"type":"main","position":{"lat":33.73218,"lon":-112.26456}},{"type":"main","position":{"lat":33.73406,"lon":-112.26387}}]},{"type":"POI","id":"3k0hZny5yT0GqqD8tkyTZg","score":9.3377966997,"dist":2573.045809,"info":"search:ta:840049001405470-US","poi":{"name":"ATM
-        at Kimo Enterprise Ii","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"6926","streetName":"West Tether
-        Trail","municipality":"Peoria","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85383","extendedPostalCode":"85383-7031","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"6926 West Tether Trail,
-        Peoria, AZ 85383","localName":"Peoria"},"position":{"lat":33.723872,"lon":-112.209063},"viewport":{"topLeftPoint":{"lat":33.72477,"lon":-112.21014},"btmRightPoint":{"lat":33.72297,"lon":-112.20798}},"entryPoints":[{"type":"main","position":{"lat":33.72363,"lon":-112.20906}}]},{"type":"POI","id":"vgviSPUqK1MFg4tmIoA-2g","score":9.330470192,"dist":3594.06136,"info":"search:ta:840046000024825-US","poi":{"name":"Coinstar
-        Kiosk","phone":"+1 800-928-2274","categorySet":[{"id":7397}],"url":"www.coinstar.com/kiosk-info?KioskIdu003d36585","categories":["cash
+        dispenser"}]}]},"address":{"streetNumber":"1356","streetName":"U Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4445","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1356 U Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916836,"lon":-77.03167},"viewport":{"topLeftPoint":{"lat":38.91774,"lon":-77.03283},"btmRightPoint":{"lat":38.91594,"lon":-77.03051}},"entryPoints":[{"type":"main","position":{"lat":38.917,"lon":-77.03167}}]},{"type":"POI","id":"WOHleMcF6iy3QOUwOwGKbA","score":9.3455333828,"dist":52.79124,"info":"search:ta:840117000006552-US","poi":{"name":"Capital
+        One Bank","phone":"+1 202-890-4518","brands":[{"name":"Capital One Bank"}],"categorySet":[{"id":7397}],"url":"www.capitalonebank.com/?external_id=ENTSOC_YX_YextRetail_Profile_0101","categories":["cash
         dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"25401","streetName":"North Lake
-        Pleasant Parkway","municipality":"Peoria","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85383","extendedPostalCode":"85383-1353","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"25401 North Lake Pleasant
-        Parkway, Peoria, AZ 85383","localName":"Peoria"},"position":{"lat":33.714294,"lon":-112.268311},"viewport":{"topLeftPoint":{"lat":33.71652,"lon":-112.27098},"btmRightPoint":{"lat":33.71207,"lon":-112.26564}},"entryPoints":[{"type":"minor","position":{"lat":33.71429,"lon":-112.26832}},{"type":"main","position":{"lat":33.71493,"lon":-112.27087}}]},{"type":"POI","id":"cszvNEnIEl6NY4NGwr3ZSw","score":9.3300264473,"dist":3646.695947,"info":"search:ta:840049001804735-US","poi":{"name":"Bank
-        Of Ok, A Div Of Bokf, Na","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"}]}]},"address":{"streetNumber":"1947","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4448","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1947 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916874,"lon":-77.031721},"viewport":{"topLeftPoint":{"lat":38.91777,"lon":-77.03288},"btmRightPoint":{"lat":38.91597,"lon":-77.03057}},"entryPoints":[{"type":"main","position":{"lat":38.91688,"lon":-77.03195}}]},{"type":"POI","id":"lle19wafVfNzbiDHlHse2Q","score":9.3455333828,"dist":55.17943,"info":"search:ta:840119000331784-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
         dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"6739","streetName":"West Happy
-        Valley Road","municipality":"Peoria","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85383","extendedPostalCode":"85383-3391","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"6739 West Happy Valley
-        Road, Peoria, AZ 85383","localName":"Peoria"},"position":{"lat":33.71167,"lon":-112.203891},"viewport":{"topLeftPoint":{"lat":33.71257,"lon":-112.20497},"btmRightPoint":{"lat":33.71077,"lon":-112.20281}},"entryPoints":[{"type":"main","position":{"lat":33.71215,"lon":-112.20386}}]},{"type":"POI","id":"R_h0-wGIijdWAfoxr8OaSg","score":9.3295879479,"dist":3698.28231,"info":"search:ta:840049002325414-US","poi":{"name":"Pueblo
-        Bank And Trust Company","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"6550","streetName":"West Happy
-        Valley Road","municipalitySubdivision":"Deer Valley","municipality":"Phoenix","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85310","extendedPostalCode":"85310-2614","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"6550 West Happy Valley
-        Road, Glendale, AZ 85310","localName":"Glendale"},"position":{"lat":33.713778,"lon":-112.201469},"viewport":{"topLeftPoint":{"lat":33.71558,"lon":-112.20364},"btmRightPoint":{"lat":33.71197,"lon":-112.1993}},"entryPoints":[{"type":"minor","position":{"lat":33.71239,"lon":-112.2021}},{"type":"minor","position":{"lat":33.71245,"lon":-112.2}},{"type":"main","position":{"lat":33.71232,"lon":-112.2002}},{"type":"minor","position":{"lat":33.71335,"lon":-112.20284}},{"type":"minor","position":{"lat":33.71242,"lon":-112.20091}},{"type":"minor","position":{"lat":33.71414,"lon":-112.20309}}]},{"type":"POI","id":"1bp2Q68ljZi9zh99U23abQ","score":9.3292344208,"dist":3739.141412,"info":"search:ta:840049001767900-US","poi":{"name":"Prosperity
+        dispenser"}]}]},"address":{"streetNumber":"1939","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4448","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1939 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916729,"lon":-77.031712},"viewport":{"topLeftPoint":{"lat":38.91763,"lon":-77.03287},"btmRightPoint":{"lat":38.91583,"lon":-77.03056}},"entryPoints":[{"type":"main","position":{"lat":38.91675,"lon":-77.03195}}]},{"type":"POI","id":"uDu2Qv4UfcoRWyJJBKXaqA","score":9.3455312847,"dist":73.745216,"info":"search:ta:840119000338152-US","poi":{"name":"Prosperity
         Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"24831","streetName":"North 67th
-        Avenue","municipalitySubdivision":"Deer Valley","municipality":"Phoenix","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85310","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"24831 North 67th Avenue,
-        Glendale, AZ 85310","localName":"Glendale"},"position":{"lat":33.711722,"lon":-112.202602},"viewport":{"topLeftPoint":{"lat":33.71262,"lon":-112.20368},"btmRightPoint":{"lat":33.71082,"lon":-112.20152}},"entryPoints":[{"type":"main","position":{"lat":33.71181,"lon":-112.20315}},{"type":"main","position":{"lat":33.71189,"lon":-112.20315}}]},{"type":"POI","id":"DJNpzrllGCH1PGY9O3H8dw","score":9.3288085098,"dist":3787.948337,"info":"search:ta:840049001793841-US","poi":{"name":"Columbus
-        Data Services","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"6640","streetName":"West Happy
-        Valley Road","municipalitySubdivision":"Deer Valley","municipality":"Phoenix","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85310","extendedPostalCode":"85310-2612","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"6640 West Happy Valley
-        Road, Glendale, AZ 85310","localName":"Glendale"},"position":{"lat":33.712627,"lon":-112.201207},"viewport":{"topLeftPoint":{"lat":33.71353,"lon":-112.20229},"btmRightPoint":{"lat":33.71173,"lon":-112.20013}},"entryPoints":[{"type":"minor","position":{"lat":33.71242,"lon":-112.20091}},{"type":"main","position":{"lat":33.71231,"lon":-112.20119}}]},{"type":"POI","id":"sqtFRhw4Q717aNPrJoWQYQ","score":9.3282682533,"dist":3848.936061,"info":"search:ta:840041000005826-US","poi":{"name":"Bank
-        of America Na","phone":"+1 844-401-8500","brands":[{"name":"Bank of America"}],"categorySet":[{"id":7397}],"url":"locators.bankofamerica.com/az/glendale/financial-cen","categories":["cash
+        dispenser"}]}]},"address":{"streetNumber":"1348","streetName":"U Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4445","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1348 U Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916838,"lon":-77.031478},"viewport":{"topLeftPoint":{"lat":38.91774,"lon":-77.03263},"btmRightPoint":{"lat":38.91594,"lon":-77.03032}},"entryPoints":[{"type":"main","position":{"lat":38.91701,"lon":-77.03148}}]},{"type":"POI","id":"2DjlvXFxwj-qd88mqaifUw","score":9.3455291866,"dist":80.804344,"info":"search:ta:840119000464578-US","poi":{"name":"ATM
+        at Hi tech Bankcard Service","categorySet":[{"id":7397}],"categories":["cash
         dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"6510","streetName":"West Happy
-        Valley Road","municipalitySubdivision":"Deer Valley","municipality":"Phoenix","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85310","extendedPostalCode":"85310-2614","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"6510 West Happy Valley
-        Road, Glendale, AZ 85310","localName":"Glendale"},"position":{"lat":33.712796,"lon":-112.200288},"viewport":{"topLeftPoint":{"lat":33.7137,"lon":-112.20137},"btmRightPoint":{"lat":33.7119,"lon":-112.19921}},"entryPoints":[{"type":"main","position":{"lat":33.71232,"lon":-112.20028}}]},{"type":"POI","id":"LLtL_36I2KnYEHR2sPqCgg","score":9.3282042618,"dist":3856.171458,"info":"search:ta:840046000027385-US","poi":{"name":"Coinstar
-        Kiosk","phone":"+1 800-928-2274","categorySet":[{"id":7397}],"url":"www.coinstar.com/kiosk-info","categories":["cash
+        dispenser"}]}]},"address":{"streetNumber":"2000","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4400","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"2000 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.917564,"lon":-77.032504},"viewport":{"topLeftPoint":{"lat":38.91846,"lon":-77.03366},"btmRightPoint":{"lat":38.91666,"lon":-77.03135}},"entryPoints":[{"type":"main","position":{"lat":38.91757,"lon":-77.03195}}]},{"type":"POI","id":"D0i2nmyHfeglhs12f74wRA","score":9.3455281376,"dist":89.61747,"info":"search:ta:840119000272259-US","poi":{"name":"ATM
+        at Netbank Payment Systems","categorySet":[{"id":7397}],"categories":["cash
         dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"6625","streetName":"West Happy
-        Valley Road","municipalitySubdivision":"Deer Valley","municipality":"Phoenix","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85310","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"6625 West Happy Valley
-        Road, Glendale, AZ 85310","localName":"Glendale"},"position":{"lat":33.711082,"lon":-112.201597},"viewport":{"topLeftPoint":{"lat":33.71213,"lon":-112.20286},"btmRightPoint":{"lat":33.71003,"lon":-112.20034}},"entryPoints":[{"type":"main","position":{"lat":33.71213,"lon":-112.2016}}]},{"type":"POI","id":"4P97-NryTgtuIo_VpR0J0g","score":9.3273985977,"dist":3945.305946,"info":"search:ta:840047000075985-US","poi":{"name":"Wells
-        Fargo Peoria","phone":"+1 623-376-7360","brands":[{"name":"Wells Fargo"}],"categorySet":[{"id":7397}],"url":"www.wellsfargo.com","categories":["cash
+        dispenser"}]}]},"address":{"streetNumber":"2013","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4436","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"2013 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.917458,"lon":-77.03165},"viewport":{"topLeftPoint":{"lat":38.91836,"lon":-77.03281},"btmRightPoint":{"lat":38.91656,"lon":-77.03049}},"entryPoints":[{"type":"main","position":{"lat":38.91746,"lon":-77.03195}}]},{"type":"POI","id":"52-Vns26g6OfGFXnfyjTdA","score":9.3455281376,"dist":84.953634,"info":"search:ta:840119000448783-US","poi":{"name":"Prosperity
+        Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"2011","streetName":"14th Street
+        Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-4436","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"2011 14th Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.917399,"lon":-77.031647},"viewport":{"topLeftPoint":{"lat":38.9183,"lon":-77.0328},"btmRightPoint":{"lat":38.9165,"lon":-77.03049}},"entryPoints":[{"type":"minor","position":{"lat":38.91738,"lon":-77.03195}},{"type":"main","position":{"lat":38.9174,"lon":-77.03195}}]},{"type":"POI","id":"oqV0FCWS1-z1oXPUxnI13g","score":9.3455270885,"dist":92.703076,"info":"search:ta:840117000013647-US","poi":{"name":"City
+        First Bank Of D.C., Na","brands":[{"name":"First Bank"},{"name":"Fidelity"}],"categorySet":[{"id":7397}],"categories":["cash
         dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"25175","streetName":"North Lake
-        Pleasant Parkway","municipality":"Peoria","countrySecondarySubdivision":"Maricopa","countrySubdivision":"AZ","countrySubdivisionName":"Arizona","countrySubdivisionCode":"AZ","postalCode":"85383","extendedPostalCode":"85383-1385","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"25175 North Lake Pleasant
-        Parkway, Peoria, AZ 85383","localName":"Peoria"},"position":{"lat":33.712181,"lon":-112.271195},"viewport":{"topLeftPoint":{"lat":33.71308,"lon":-112.27228},"btmRightPoint":{"lat":33.71128,"lon":-112.27011}},"entryPoints":[{"type":"main","position":{"lat":33.71233,"lon":-112.27182}}]}]}'
-  recorded_at: Wed, 06 Dec 2023 20:04:02 GMT
+        dispenser"}]}]},"address":{"streetNumber":"1432","streetName":"U Street Northwest","municipalitySubdivision":"Shaw","municipality":"Washington","countrySecondarySubdivision":"District
+        of Columbia","countrySubdivision":"DC","countrySubdivisionName":"District
+        of Columbia","countrySubdivisionCode":"DC","postalCode":"20009","extendedPostalCode":"20009-3987","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1432 U Street Northwest,
+        Washington, DC 20009","localName":"Washington"},"position":{"lat":38.916631,"lon":-77.033364},"viewport":{"topLeftPoint":{"lat":38.91753,"lon":-77.03452},"btmRightPoint":{"lat":38.91573,"lon":-77.03221}},"entryPoints":[{"type":"main","position":{"lat":38.91699,"lon":-77.03333}}]}]}'
+  recorded_at: Thu, 07 Dec 2023 17:42:59 GMT
 recorded_with: VCR 6.2.0

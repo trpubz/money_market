@@ -30,5 +30,26 @@ RSpec.describe "TomTom Service" do
       expect(response[:status]).to eq 200
       expect(response[:data]).to be_a Hash
     end
+
+    describe "::lat_lon_from_address" do
+      it "returns a lat/lon from a full address using the tom tom geocode endpoint", :vcr do
+        WebMock.allow_net_connect!
+
+        market_params = {
+          name: "14&U Farmers' Market",
+          street: "1400 U Street NW",
+          city: "Washington",
+          county: "DC",
+          state: "DC"
+        }
+
+        mrkt = Market.create(market_params)
+
+        lat, lon = TomTomService.lat_lon_from_address(mrkt.url_encoded_address)
+
+        expect(lat).to be_a String
+        expect(lon).to be_a String
+      end
+    end
   end
 end

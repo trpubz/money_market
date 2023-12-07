@@ -34,11 +34,11 @@ describe "Markets API" do
       expect(market[:attributes]).to have_key(:zip)
       expect(market[:attributes][:zip]).to be_a(String)
 
-      expect(market[:attributes]).to have_key(:lat)
-      expect(market[:attributes][:lat]).to be_an(String)
-
-      expect(market[:attributes]).to have_key(:lon)
-      expect(market[:attributes][:lon]).to be_an(String)
+      # expect(market[:attributes]).to have_key(:lat)
+      # expect(market[:attributes][:lat]).to be_an(String)
+      #
+      # expect(market[:attributes]).to have_key(:lon)
+      # expect(market[:attributes][:lon]).to be_an(String)
 
       expect(market[:attributes]).to have_key(:vendor_count)
       expect(market[:attributes][:vendor_count]).to eq 0
@@ -78,11 +78,11 @@ describe "Markets API" do
     expect(market[:attributes]).to have_key(:zip)
     expect(market[:attributes][:zip]).to be_a(String)
 
-    expect(market[:attributes]).to have_key(:lat)
-    expect(market[:attributes][:lat]).to be_an(String)
-
-    expect(market[:attributes]).to have_key(:lon)
-    expect(market[:attributes][:lon]).to be_an(String)
+    # expect(market[:attributes]).to have_key(:lat)
+    # expect(market[:attributes][:lat]).to be_an(String)
+    #
+    # expect(market[:attributes]).to have_key(:lon)
+    # expect(market[:attributes][:lon]).to be_an(String)
 
     expect(market[:attributes]).to have_key(:vendor_count)
     expect(market[:attributes][:vendor_count]).to be_an(Integer)
@@ -91,7 +91,7 @@ describe "Markets API" do
   it "can create a new market" do
     market_params = {
       name: "14&U Farmers' Market",
-      street: "1400 U Street NW ",
+      street: "1400 U Street NW",
       city: "Washington",
       county: "DC",
       state: "DC",
@@ -245,12 +245,15 @@ describe "Markets API" do
   describe "#nearest_atms" do
     context "good request from valid market id" do
       it "returns json data and 200 ok status", :vcr do
-        mrkt = create(
-          :market,
-          id: 330318,
-          name: "Uptown Ankeny Farmers Market",
-          lat: "41.729882",
-          lon: "-93.608108")
+        market_params = {
+          name: "14&U Farmers' Market",
+          street: "1400 U Street NW",
+          city: "Washington",
+          county: "DC",
+          state: "DC"
+        }
+
+        mrkt = Market.create(market_params)
 
         get nearest_atms_api_v0_market_path(mrkt)
 

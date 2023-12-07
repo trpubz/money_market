@@ -19,4 +19,8 @@ class Market < ApplicationRecord
   def cash_only
     !vendors.any? { |v| v.credit_accepted }
   end
+
+  def url_encoded_address
+    [street, city, county, state, zip].join(" ").gsub(" ", "%20")
+  end
 end
