@@ -33,6 +33,9 @@ jobs:
         with:
           bundler-cache: true
       # Add or replace database setup steps here
+      - name: List Docker containers
+        run: |
+          docker ps -a
       - name: Ping Postgres
         run: ping -c 4 postgres
       - name: Check DB Connection
