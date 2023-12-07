@@ -49,6 +49,7 @@ class Api::V0::MarketsController < ApplicationController
 
   def search
     if valid_param_combo?
+      # require 'pry'; binding.pry
       mrkts = Market.search(search_params)
       render json: MarketSerializer.new(mrkts), status: :ok
     else
