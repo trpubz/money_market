@@ -1,6 +1,6 @@
 class MarketSerializer
   include JSONAPI::Serializer
-  attributes :name, :street, :city, :county, :state, :zip, :lat, :lon
+  attributes :name, :street, :city, :county, :state, :zip
 
   attribute :vendor_count do |obj|
     obj.vendor_count
@@ -19,8 +19,6 @@ class MarketSerializer
       county: market.county,
       state: market.state,
       zip: market.zip,
-      lat: market.lat,
-      lon: market.lon,
       vendor_count: market.vendor_count,
       cash_only: market.cash_only
     }

@@ -34,11 +34,11 @@ describe "Markets API" do
       expect(market[:attributes]).to have_key(:zip)
       expect(market[:attributes][:zip]).to be_a(String)
 
-      expect(market[:attributes]).to have_key(:lat)
-      expect(market[:attributes][:lat]).to be_an(String)
-
-      expect(market[:attributes]).to have_key(:lon)
-      expect(market[:attributes][:lon]).to be_an(String)
+      # expect(market[:attributes]).to have_key(:lat)
+      # expect(market[:attributes][:lat]).to be_an(String)
+      #
+      # expect(market[:attributes]).to have_key(:lon)
+      # expect(market[:attributes][:lon]).to be_an(String)
 
       expect(market[:attributes]).to have_key(:vendor_count)
       expect(market[:attributes][:vendor_count]).to eq 0
@@ -78,11 +78,11 @@ describe "Markets API" do
     expect(market[:attributes]).to have_key(:zip)
     expect(market[:attributes][:zip]).to be_a(String)
 
-    expect(market[:attributes]).to have_key(:lat)
-    expect(market[:attributes][:lat]).to be_an(String)
-
-    expect(market[:attributes]).to have_key(:lon)
-    expect(market[:attributes][:lon]).to be_an(String)
+    # expect(market[:attributes]).to have_key(:lat)
+    # expect(market[:attributes][:lat]).to be_an(String)
+    #
+    # expect(market[:attributes]).to have_key(:lon)
+    # expect(market[:attributes][:lon]).to be_an(String)
 
     expect(market[:attributes]).to have_key(:vendor_count)
     expect(market[:attributes][:vendor_count]).to be_an(Integer)
