@@ -19,11 +19,11 @@ jobs:
         ports:
           - "5432:5432"
         env:
-          POSTGRES_DB: market_money_test
+          POSTGRES_DB: market_money_development
           POSTGRES_USER: rails
     env:
-      RAILS_ENV: test
-      DATABASE_URL: "postgres://rails@localhost:5432/market_money_test"
+      RAILS_ENV: development
+      DATABASE_URL: "postgres://rails@postgres:5432/market_money_development"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -33,8 +33,10 @@ jobs:
         with:
           bundler-cache: true
       # Add or replace database setup steps here
+      - name: Check DB Connection
+        run: psql $DATABASE_URL -c 'SELECT 1'
       - name: Set up database schema
-        run: bin/rails db:{create,seed,schema:dump}
+        run: bin/rails db:{seed,schema:dump}
       # Add or replace test runners here
       - name: Run tests
         run: bin/rake
