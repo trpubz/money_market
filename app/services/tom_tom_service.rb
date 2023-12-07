@@ -7,6 +7,15 @@ class TomTomService
     response_conversion(response)
   end
 
+  # @param mrkt: a Market AR object sans lat/lon
+  def self.lat_lon_from_address(address)
+    response = conn.get("search/2/geocode/#{address}.json")
+
+    result = JSON.parse(response.body, symbolize_names: true)[:results].first
+
+    [result[:position][:lat].to_s, result[:position][:lon].to_s]
+  end
+
   # @param geo: a hash with lat: and lon: keys
   def self.atm_json(geo)
     response = conn.get("search/2/categorySearch/automatic%20teller%20machines.json") do |req|
@@ -29,4 +38,5 @@ class TomTomService
   def self.response_conversion(response)
     {status: response.status, data: JSON.parse(response.body, symbolize_names: true)}
   end
+
 end

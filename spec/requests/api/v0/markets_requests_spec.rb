@@ -91,7 +91,7 @@ describe "Markets API" do
   it "can create a new market" do
     market_params = {
       name: "14&U Farmers' Market",
-      street: "1400 U Street NW ",
+      street: "1400 U Street NW",
       city: "Washington",
       county: "DC",
       state: "DC",

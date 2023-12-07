@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.tomtom.com/search/2/categorySearch/automatic%20teller%20machines.json?key=<TOMTOM_API_KEY>&lat=41.729882&lon=-93.608108
+    uri: https://api.tomtom.com/search/2/geocode/97750%20Donnell%20Parkways%20Port%20Morton%20Rio%20Grande%20IN%2094408-3288.json?key=<TOMTOM_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 06 Dec 2023 20:29:57 GMT
+      - Thu, 07 Dec 2023 17:37:31 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -27,13 +27,13 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Tracking-Id:
-      - 768cf84b-06cc-48a4-9c45-87cffda7fa67
+      - b7c3605f-862d-4aa9-9eb9-c61eb4c1d688
       Access-Control-Expose-Headers:
       - Tracking-ID
       X-Apigee.target-Latency:
-      - '396'
+      - '280'
       X-Envoy-Upstream-Service-Time:
-      - '408'
+      - '294'
       Server:
       - tomtom
       X-Envoy-Attempt-Count:
@@ -44,54 +44,116 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"summary":{"query":"automatic teller machines","queryType":"NON_NEAR","queryTime":393,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":41.729882,"lon":-93.608108}},"results":[{"type":"POI","id":"Z-RKFtZ2STflUw7ZMYg1Nw","score":9.3455270885,"dist":91.431357,"info":"search:ta:840199001798595-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
+      string: '{"summary":{"query":"97750 donnell parkways port morton rio grande
+        in 94408 3288","queryType":"NON_NEAR","queryTime":277,"numResults":2,"offset":0,"totalResults":2,"fuzzyLevel":2},"results":[{"type":"Address
+        Range","id":"pSPpZDEC75Je54U1nfHkjQ","score":5.7522993088,"matchConfidence":{"score":0.25759930927390734},"address":{"streetNumber":"3288","streetName":"Pfieffer
+        Parkway","municipality":"South Fork","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81154","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"3288 Pfieffer Parkway,
+        South Fork, CO 81154","localName":"South Fork"},"position":{"lat":37.68994,"lon":-106.55535},"viewport":{"topLeftPoint":{"lat":37.69041,"lon":-106.55543},"btmRightPoint":{"lat":37.68923,"lon":-106.55537}},"addressRanges":{"rangeRight":"7866
+        - 300","from":{"lat":37.68923,"lon":-106.55537},"to":{"lat":37.69041,"lon":-106.55543}}},{"type":"Address
+        Range","id":"geJlki3I-LyJzjNTgkOnzw","score":5.6524806023,"matchConfidence":{"score":0.2958053242952086},"address":{"streetNumber":"3288","streetName":"Rua
+        Moron","municipalitySubdivision":"Loteamento Morada da Colina","municipality":"Passo
+        Fundo","countrySubdivision":"Rio Grande do Sul","countrySubdivisionName":"Rio
+        Grande do Sul","countrySubdivisionCode":"RS","postalCode":"99010","extendedPostalCode":"99010-035","countryCode":"BR","country":"Brasil","countryCodeISO3":"BRA","freeformAddress":"Rua
+        Moron, 3288, 99010-035, Passo Fundo","localName":"Passo Fundo"},"position":{"lat":-28.26977,"lon":-52.42294},"viewport":{"topLeftPoint":{"lat":-28.26973,"lon":-52.42352},"btmRightPoint":{"lat":-28.26999,"lon":-52.42294}},"addressRanges":{"rangeLeft":"3284
+        - 3404","from":{"lat":-28.26972,"lon":-52.42294},"to":{"lat":-28.26999,"lon":-52.42352}}}]}'
+  recorded_at: Thu, 07 Dec 2023 17:37:31 GMT
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic%20teller%20machines.json?key=<TOMTOM_API_KEY>&lat=37.68994&lon=-106.55535
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Dec 2023 17:37:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 96c9d58f-ae3f-4f69-aeed-3634b09dc973
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '583'
+      X-Envoy-Upstream-Service-Time:
+      - '591'
+      Server:
+      - tomtom
+      X-Envoy-Attempt-Count:
+      - '1'
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic teller machines","queryType":"NON_NEAR","queryTime":579,"numResults":10,"offset":0,"totalResults":100,"fuzzyLevel":1,"geoBias":{"lat":37.68994,"lon":-106.55535}},"results":[{"type":"POI","id":"3004mlARGHcm-880oM6rhQ","score":9.3059026828,"dist":5852.387985,"info":"search:ta:840089002934367-US","poi":{"name":"ATM","categorySet":[{"id":7397}],"categories":["cash
         dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"312","streetName":"Southwest Maple
-        Street","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","extendedPostalCode":"50023-2915","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"312 Southwest Maple Street,
-        Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.729244,"lon":-93.608803},"viewport":{"topLeftPoint":{"lat":41.73014,"lon":-93.61001},"btmRightPoint":{"lat":41.72834,"lon":-93.6076}},"entryPoints":[{"type":"main","position":{"lat":41.72925,"lon":-93.60856}}]},{"type":"POI","id":"LR6m9PxZMsjlGMTdE1yObQ","score":9.3451211094,"dist":596.269236,"info":"search:ta:840199001510407-US","poi":{"name":"Lynk
+        dispenser"}]}]},"address":{"streetNumber":"29130","streetName":"US Highway
+        160","municipality":"South Fork","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81154","extendedPostalCode":"81154-9501","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"29130 US Highway 160, South
+        Fork, CO 81154","localName":"South Fork"},"position":{"lat":37.673062,"lon":-106.61834},"viewport":{"topLeftPoint":{"lat":37.67396,"lon":-106.61948},"btmRightPoint":{"lat":37.67216,"lon":-106.6172}},"entryPoints":[{"type":"main","position":{"lat":37.67314,"lon":-106.6184}}]},{"type":"POI","id":"sVf3Z7Gp7INsTI5-RSVOdQ","score":9.2885399924,"dist":7038.342508,"info":"search:ta:840089002935240-US","poi":{"name":"Nbh
+        Bank","brands":[{"name":"Fidelity"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"29889","streetName":"US Highway
+        160","municipality":"South Fork","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81154","extendedPostalCode":"81154-9501","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"29889 US Highway 160, South
+        Fork, CO 81154","localName":"South Fork"},"position":{"lat":37.670842,"lon":-106.631601},"viewport":{"topLeftPoint":{"lat":37.67174,"lon":-106.63274},"btmRightPoint":{"lat":37.66994,"lon":-106.63046}},"entryPoints":[{"type":"main","position":{"lat":37.67054,"lon":-106.63153}}]},{"type":"POI","id":"l2ZAuC0KJNnS9zPe1ICBFA","score":9.2764004811,"dist":7767.309436,"info":"search:ta:840089002593243-US","poi":{"name":"Lynk
         Systems","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"302","streetName":"South Ankeny
-        Boulevard","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","extendedPostalCode":"50023-3127","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"302 South Ankeny Boulevard,
-        Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.729343,"lon":-93.600959},"viewport":{"topLeftPoint":{"lat":41.73024,"lon":-93.60216},"btmRightPoint":{"lat":41.72844,"lon":-93.59975}},"entryPoints":[{"type":"main","position":{"lat":41.72934,"lon":-93.60038}}]},{"type":"POI","id":"yg8vbc_r0He8ngBz0IZ-tQ","score":9.3450340389,"dist":655.177767,"info":"search:ta:840199001507566-US","poi":{"name":"Lynk
+        dispenser"}]}]},"address":{"streetNumber":"30359","streetName":"US Highway
+        160","municipality":"South Fork","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81154","extendedPostalCode":"81154-9786","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"30359 US Highway 160, South
+        Fork, CO 81154","localName":"South Fork"},"position":{"lat":37.669736,"lon":-106.639838},"viewport":{"topLeftPoint":{"lat":37.67064,"lon":-106.64097},"btmRightPoint":{"lat":37.66884,"lon":-106.6387}},"entryPoints":[{"type":"main","position":{"lat":37.66943,"lon":-106.63955}},{"type":"main","position":{"lat":37.66942,"lon":-106.63957}}]},{"type":"POI","id":"UaNBM_uwmpuDLs4zJT_PFA","score":9.0338672689,"dist":17224.332306,"info":"search:ta:840089002548593-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"220","streetName":"Grand Avenue","municipality":"Del
+        Norte","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81132","extendedPostalCode":"81132-9735","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"220 Grand Avenue, Del Norte,
+        CO 81132","localName":"Del Norte"},"position":{"lat":37.679691,"lon":-106.360044},"viewport":{"topLeftPoint":{"lat":37.68059,"lon":-106.36118},"btmRightPoint":{"lat":37.67879,"lon":-106.35891}},"entryPoints":[{"type":"main","position":{"lat":37.67931,"lon":-106.36008}}]},{"type":"POI","id":"A8Yg-JoP2hMC18ybXRRIrQ","score":9.0270957042,"dist":17433.264053,"info":"search:ta:840089001129892-US","poi":{"name":"ATM
+        at First Southwest Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"555","streetName":"Cedar Street","municipality":"Del
+        Norte","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81132","extendedPostalCode":"81132-2381","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"555 Cedar Street, Del Norte,
+        CO 81132","localName":"Del Norte"},"position":{"lat":37.678805,"lon":-106.357742},"viewport":{"topLeftPoint":{"lat":37.6797,"lon":-106.35888},"btmRightPoint":{"lat":37.67791,"lon":-106.35661}},"entryPoints":[{"type":"main","position":{"lat":37.67878,"lon":-106.3574}}]},{"type":"POI","id":"kIP32fXS28qBl1TqWwjVOw","score":9.0237198878,"dist":17536.920888,"info":"search:ta:840089002551392-US","poi":{"name":"Lynk
         Systems","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"11655","streetName":"Southwest
-        Ordnance Road","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","extendedPostalCode":"50023-2824","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"11655 Southwest Ordnance
-        Road, Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.724422,"lon":-93.611076},"viewport":{"topLeftPoint":{"lat":41.72532,"lon":-93.61228},"btmRightPoint":{"lat":41.72352,"lon":-93.60987}},"entryPoints":[{"type":"main","position":{"lat":41.72442,"lon":-93.61108}}]},{"type":"POI","id":"32_DBMYeY7cHyR1834LHNQ","score":9.3450036167,"dist":674.494335,"info":"search:ta:840199001543258-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"}]}]},"address":{"streetNumber":"450","streetName":"Grand Avenue","municipality":"Del
+        Norte","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81132","extendedPostalCode":"81132-2205","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"450 Grand Avenue, Del Norte,
+        CO 81132","localName":"Del Norte"},"position":{"lat":37.679412,"lon":-106.356508},"viewport":{"topLeftPoint":{"lat":37.68031,"lon":-106.35764},"btmRightPoint":{"lat":37.67851,"lon":-106.35537}},"entryPoints":[{"type":"main","position":{"lat":37.67905,"lon":-106.35655}}]},{"type":"POI","id":"agibN2F_Qw7DgYBxnTfK-g","score":9.0195121813,"dist":17665.700606,"info":"search:ta:840087000017722-US","poi":{"name":"Nbh
+        Bank","brands":[{"name":"Fidelity"}],"categorySet":[{"id":7397}],"categories":["cash
         dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"102","streetName":"North Ankeny
-        Boulevard","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","extendedPostalCode":"50023-1703","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"102 North Ankeny Boulevard,
-        Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.732205,"lon":-93.600599},"viewport":{"topLeftPoint":{"lat":41.7331,"lon":-93.6018},"btmRightPoint":{"lat":41.73131,"lon":-93.59939}},"entryPoints":[{"type":"main","position":{"lat":41.73221,"lon":-93.60044}}]},{"type":"POI","id":"u6rCo-NoTohfmhjP8gXulg","score":9.3449564098,"dist":704.257257,"info":"search:ta:840199001545341-US","poi":{"name":"Metabank","categorySet":[{"id":7397}],"categories":["cash
-        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"127","streetName":"North Ankeny
-        Boulevard","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","extendedPostalCode":"50023-1708","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"127 North Ankeny Boulevard,
-        Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.732153,"lon":-93.600186},"viewport":{"topLeftPoint":{"lat":41.73305,"lon":-93.60139},"btmRightPoint":{"lat":41.73125,"lon":-93.59898}},"entryPoints":[{"type":"main","position":{"lat":41.73215,"lon":-93.60031}}]},{"type":"POI","id":"exaWqz60cktZ7i_MiL6BWg","score":9.3449322819,"dist":718.166166,"info":"search:ta:840199001527494-US","poi":{"name":"Veridian
-        Cu","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"410","streetName":"North Ankeny
-        Boulevard","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","extendedPostalCode":"50023-1703","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"410 North Ankeny Boulevard,
-        Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.734643,"lon":-93.602259},"viewport":{"topLeftPoint":{"lat":41.73602,"lon":-93.60411},"btmRightPoint":{"lat":41.73326,"lon":-93.60041}},"entryPoints":[{"type":"minor","position":{"lat":41.73543,"lon":-93.60187}},{"type":"main","position":{"lat":41.73464,"lon":-93.60041}}]},{"type":"POI","id":"Q2ejyumpXv3OSyq3UljJSQ","score":9.3447528957,"dist":817.925537,"info":"search:ta:840197000037604-US","poi":{"name":"ATM","categorySet":[{"id":7397}],"categories":["cash
-        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.724276,"lon":-93.614489},"viewport":{"topLeftPoint":{"lat":41.72518,"lon":-93.61569},"btmRightPoint":{"lat":41.72338,"lon":-93.61328}},"entryPoints":[{"type":"main","position":{"lat":41.72424,"lon":-93.61449}}]},{"type":"POI","id":"T63hXiYvbdLqY-zuIpbCfw","score":9.3446899532,"dist":850.152045,"info":"search:ta:840199001827751-US","poi":{"name":"ATM","categorySet":[{"id":7397}],"categories":["cash
-        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"1165","streetName":"Southwest Ordnance
-        Road","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","extendedPostalCode":"50023-2837","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"1165 Southwest Ordnance
-        Road, Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.724108,"lon":-93.614823},"viewport":{"topLeftPoint":{"lat":41.72501,"lon":-93.61603},"btmRightPoint":{"lat":41.72321,"lon":-93.61362}},"entryPoints":[{"type":"main","position":{"lat":41.72441,"lon":-93.61482}}]},{"type":"POI","id":"iwCSkhuDh2S81X2A5q1ilQ","score":9.3446794628,"dist":855.573191,"info":"search:ta:840199001551057-US","poi":{"name":"Veridian
-        Cu","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"414","streetName":"North Ankeny
-        Boulevard","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"414 North Ankeny Boulevard,
-        Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.735214,"lon":-93.600675},"viewport":{"topLeftPoint":{"lat":41.73611,"lon":-93.60188},"btmRightPoint":{"lat":41.73431,"lon":-93.59947}},"entryPoints":[{"type":"main","position":{"lat":41.73519,"lon":-93.6004}}]},{"type":"POI","id":"i1mKenuR0dcSwFF2vue-Kg","score":9.3445640682,"dist":911.134548,"info":"search:ta:840199001517801-US","poi":{"name":"Lynk
-        Systems","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
-        dispenser"}]}]},"address":{"streetNumber":"705","streetName":"South Ankeny
-        Boulevard","municipality":"Ankeny","countrySecondarySubdivision":"Polk","countrySubdivision":"IA","countrySubdivisionName":"Iowa","countrySubdivisionCode":"IA","postalCode":"50023","extendedPostalCode":"50023-3418","countryCode":"US","country":"United
-        States","countryCodeISO3":"USA","freeformAddress":"705 South Ankeny Boulevard,
-        Ankeny, IA 50023","localName":"Ankeny"},"position":{"lat":41.72417,"lon":-93.600236},"viewport":{"topLeftPoint":{"lat":41.72507,"lon":-93.60144},"btmRightPoint":{"lat":41.72327,"lon":-93.59903}},"entryPoints":[{"type":"main","position":{"lat":41.72383,"lon":-93.60042}}]}]}'
-  recorded_at: Wed, 06 Dec 2023 20:29:57 GMT
+        dispenser"}]}]},"address":{"streetNumber":"595","streetName":"Grand Avenue","municipality":"Del
+        Norte","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81132","extendedPostalCode":"81132-2202","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"595 Grand Avenue, Del Norte,
+        CO 81132","localName":"Del Norte"},"position":{"lat":37.678568,"lon":-106.355116},"viewport":{"topLeftPoint":{"lat":37.67947,"lon":-106.35625},"btmRightPoint":{"lat":37.67767,"lon":-106.35398}},"entryPoints":[{"type":"main","position":{"lat":37.67894,"lon":-106.35507}}]},{"type":"POI","id":"4JN6BHGBZKtoz0BuPDr6wg","score":9.0134508179,"dist":17850.310429,"info":"search:ta:840089002932476-US","poi":{"name":"Del
+        Norte Bank Atm","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"705","streetName":"Grand Avenue","municipality":"Del
+        Norte","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81132","extendedPostalCode":"81132-3236","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"705 Grand Avenue, Del Norte,
+        CO 81132","localName":"Del Norte"},"position":{"lat":37.678507,"lon":-106.353018},"viewport":{"topLeftPoint":{"lat":37.67941,"lon":-106.35415},"btmRightPoint":{"lat":37.67761,"lon":-106.35188}},"entryPoints":[{"type":"main","position":{"lat":37.67873,"lon":-106.353}}]},{"type":"POI","id":"Iu3A4FREpfaa10k211DFwQ","score":9.0133102463,"dist":17854.561391,"info":"search:ta:840089001034027-US","poi":{"name":"ATM
+        at Alamosa Credit Union","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"730","streetName":"Grand Avenue","municipality":"Del
+        Norte","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81132","extendedPostalCode":"81132-2207","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"730 Grand Avenue, Del Norte,
+        CO 81132","localName":"Del Norte"},"position":{"lat":37.678831,"lon":-106.35294},"viewport":{"topLeftPoint":{"lat":37.67973,"lon":-106.35408},"btmRightPoint":{"lat":37.67793,"lon":-106.3518}},"entryPoints":[{"type":"main","position":{"lat":37.67873,"lon":-106.35295}}]},{"type":"POI","id":"xZj9lkt-VSZ-NMDQ4C_c_w","score":9.0091004417,"dist":17982.153438,"info":"search:ta:840089002980398-US","poi":{"name":"ATM
+        at Stop N Shop","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"805","streetName":"Grand Avenue","municipality":"Del
+        Norte","countrySecondarySubdivision":"Rio Grande","countrySubdivision":"CO","countrySubdivisionName":"Colorado","countrySubdivisionCode":"CO","postalCode":"81132","extendedPostalCode":"81132-2209","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"805 Grand Avenue, Del Norte,
+        CO 81132","localName":"Del Norte"},"position":{"lat":37.678261,"lon":-106.351539},"viewport":{"topLeftPoint":{"lat":37.67916,"lon":-106.35268},"btmRightPoint":{"lat":37.67736,"lon":-106.3504}},"entryPoints":[{"type":"main","position":{"lat":37.67861,"lon":-106.35149}}]}]}'
+  recorded_at: Thu, 07 Dec 2023 17:37:32 GMT
 recorded_with: VCR 6.2.0
