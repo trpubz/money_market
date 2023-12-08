@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:11-alpine
+        image: postgres:12
         ports:
           - "5432:5432"
         env:
@@ -23,15 +23,15 @@ jobs:
           POSTGRES_USER: rails
     env:
       RAILS_ENV: test
-      DATABASE_URL: "postgres://rails@postgres:5432/rails_test"
+      DATABASE_URL: "postgres://rails@localhost:5432/rails_test"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
       # Add or replace dependency steps here
       - name: Install Ruby and gems
-        uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
+        uses: ruby/setup-ruby@v1.80.0
         with:
-          bundler-cache: true
+          ruby-version: 2.6.6
       # Add or replace database setup steps here
       - name: List Docker containers
         run: |
