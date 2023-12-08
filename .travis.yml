@@ -6,4 +6,4 @@ env:
 gemfile:
   - Gemfile
 script:
-  - bundle exec rails rspec
+  - bundle exec rspec
