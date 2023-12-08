@@ -3,6 +3,6 @@ class ApplicationController < ActionController::API
 
   def not_found_response(exception)
     render json: ErrorSerializer.new(exception).serialize_json,
-           status: 404
+      status: 404
   end
 end

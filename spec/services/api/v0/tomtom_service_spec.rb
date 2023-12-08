@@ -14,7 +14,7 @@ RSpec.describe "TomTom Service" do
       conn = TomTomService.conn
       expect(conn).to be_a Faraday::Connection
     end
-    
+
     it "builds a valid request" do
       response = TomTomService.lat_lon_json(%w[37.8328 -122.27669])
 
