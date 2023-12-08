@@ -6,7 +6,6 @@ RSpec.describe Market do
       vendors = create_list(:vendor, 2)
       mrkt = create :market
 
-
       vendors.each do |v|
         MarketVendor.create(vendor_id: v.id, market_id: mrkt.id)
       end
