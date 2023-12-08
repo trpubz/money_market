@@ -1,6 +1,6 @@
 require_relative "../models/atm"
 
-class ATMFacade
+class AtmFacade
   def self.atms(mrkt)
     atms = Rails.cache.read("atms-#{mrkt.id}")
 

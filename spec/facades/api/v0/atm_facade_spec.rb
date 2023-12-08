@@ -1,5 +1,4 @@
 require "rails_helper"
-require_relative "../../../../app/facades/atm_facade"
 
 RSpec.describe "ATM Facade" do
   describe "class methods" do
@@ -15,7 +14,7 @@ RSpec.describe "ATM Facade" do
 
         mrkt = Market.create(market_params)
 
-        atms = ATMFacade.atms(mrkt)
+        atms = AtmFacade.atms(mrkt)
 
         expect(atms).to be_an Array
         expect(atms.first).to be_an ATM

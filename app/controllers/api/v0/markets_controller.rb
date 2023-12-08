@@ -1,6 +1,3 @@
-require_relative "../../../facades/atm_facade"
-require_relative "../../../serializers/atm_serializer"
-
 class Api::V0::MarketsController < ApplicationController
   def index
     records_per_page = params.fetch(:per_page, 20).to_i
@@ -60,7 +57,7 @@ class Api::V0::MarketsController < ApplicationController
   def nearest_atms
     mrkt = Market.find_by(id: params[:id])
     if mrkt
-      render json: ATMSerializer.new(ATMFacade.atms(mrkt))
+      render json: AtmSerializer.new(AtmFacade.atms(mrkt))
     else
       render json: {errors: [{detail: "Not Found: bad id #{params[:id]}"}]}, status: :not_found
     end
