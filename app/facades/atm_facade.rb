@@ -1,4 +1,4 @@
-require_relative "../models/atm"
+require_relative "../poros/atm"
 
 class AtmFacade
   def self.atms(mrkt)

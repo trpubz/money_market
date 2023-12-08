@@ -5,3 +5,5 @@ env:
   - DB=postgres
 gemfile:
   - Gemfile
+script:
+  - bundle exec rails rspec
