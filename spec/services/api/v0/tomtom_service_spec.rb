@@ -14,7 +14,7 @@ RSpec.describe "TomTom Service" do
       conn = TomTomService.conn
       expect(conn).to be_a Faraday::Connection
     end
-    
+
     it "builds a valid request" do
       response = TomTomService.lat_lon_json(%w[37.8328 -122.27669])
 
@@ -33,7 +33,7 @@ RSpec.describe "TomTom Service" do
 
     describe "::lat_lon_from_address" do
       it "returns a lat/lon from a full address using the tom tom geocode endpoint", :vcr do
-        WebMock.allow_net_connect!
+        # WebMock.allow_net_connect!
 
         market_params = {
           name: "14&U Farmers' Market",
